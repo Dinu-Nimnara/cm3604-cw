@@ -1,0 +1,32 @@
+# Environments
+.venv/
+venv/
+env/
+.conda/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Dataset — do not redistribute
+data/
+
+# Experiment outputs
+results/
+*.csv
+*.png
+!report/**/*.png        # keep figures that go in the report, if any
+
+# Cached model scores
+results/cache/
+*.pkl
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
