@@ -17,7 +17,8 @@ data/
 results/
 *.csv
 *.png
-!report/**/*.png        # keep figures that go in the report, if any
+# Keep figures that go in the report (git has no end-of-line comments, so this note must be on its own line)
+!report/**/*.png
 
 # Cached model scores
 results/cache/
