@@ -1,0 +1,10 @@
+# Analysis-only tools for the Member 1 notebook (figures/tables for the report).
+# NOT needed by factcheck.py and NOT part of the graded requirements.txt.
+# Install on top of the graded environment, using requirements.txt as a constraint so that no graded package
+# version can change (pip fails instead of upgrading/downgrading):
+#   pip install -r experiments/m1_preprocessing/requirements-analysis.txt -c requirements.txt
+matplotlib==3.9.2
+pandas==2.2.3
+notebook==7.2.2
+ipykernel==6.29.5
+nbconvert==7.16.4
