@@ -349,32 +349,83 @@ class FactExample(object):
 
 
 class EntailmentModel(object):
+    """Return max P(entailment) for an evidence/claim pair as a Python float.
+
+    Long evidence is evaluated in overlapping token windows so that evidence
+    beyond the first model-length window is not silently discarded.
+    """
     def __init__(self, model, tokenizer, cuda=False):
         self.model = model
         self.tokenizer = tokenizer
         self.cuda = cuda
+        self.model.eval()
+        self.entailment_index = self._resolve_entailment_index()
 
-    def check_entailment(self, premise: str, hypothesis: str):
-        with torch.no_grad():
-            # Tokenize the premise and hypothesis
-            inputs = self.tokenizer(premise, hypothesis, return_tensors='pt', truncation=True, padding=True)
-            if self.cuda:
-                inputs = {key: value.to('cuda') for key, value in inputs.items()}
-            # Get the model's prediction
-            outputs = self.model(**inputs)
-            logits = outputs.logits
+        limits = [512]  # maximum for the coursework's DeBERTa model
+        for limit in (getattr(tokenizer, "model_max_length", None),
+                      getattr(model.config, "max_position_embeddings", None)):
+            if isinstance(limit, int) and 0 < limit < 1_000_000:
+                limits.append(limit)
+        self.max_length = min(limits)
 
-        # Note that the labels are ["entailment", "neutral", "contradiction"]. There are a number of ways to map
-        # these logits or probabilities to classification decisions; you'll have to decide how you want to do this.
+    def _resolve_entailment_index(self):
+        labels = getattr(self.model.config, "id2label", {}) or {}
+        if len(labels) != 3:
+            raise ValueError("Expected a three-class NLI model.")
+        for index, label in labels.items():
+            if str(label).strip().lower() == "entailment":
+                return int(index)
 
-        raise Exception("Not implemented")
+        # Generic labels are ambiguous. Only use the documented starter order
+        # for the specific coursework checkpoint, never for an arbitrary model.
+        name = str(getattr(self.model.config, "_name_or_path", "")).rstrip("/")
+        generic = all(str(v).upper() == "LABEL_" + str(k)
+                      for k, v in labels.items())
+        if generic and name == "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli":
+            return 0
+        raise ValueError("Cannot identify entailment in model.config.id2label.")
 
-        # To prevent out-of-memory (OOM) issues during autograding, we explicitly delete
-        # objects inputs, outputs, logits, and any results that are no longer needed after the computation.
-        del inputs, outputs, logits
-        gc.collect()
+    def check_entailment(self, premise: str, hypothesis: str) -> float:
+        if not premise.strip() or not hypothesis.strip():
+            raise ValueError("Premise and hypothesis must contain non-whitespace text.")
+        premise_ids = self.tokenizer.encode(premise, add_special_tokens=False)
+        hypothesis_ids = self.tokenizer.encode(hypothesis, add_special_tokens=False)
+        special_count = self.tokenizer.num_special_tokens_to_add(pair=True)
+        budget = self.max_length - len(hypothesis_ids) - special_count
+        if budget < 1:
+            raise ValueError("Claim is too long to pair with evidence within the model limit.")
+        if not premise_ids:
+            return 0.0
 
-        # return something
+        device = next(self.model.parameters()).device
+        if self.cuda and device.type != "cuda":
+            raise ValueError("cuda=True requires the model to be on CUDA, as in the driver.")
+        overlap = min(32, budget // 4)
+        step = budget - overlap
+        best_score = 0.0
+        with torch.inference_mode():
+            for start in range(0, len(premise_ids), step):
+                window = premise_ids[start:start + budget]
+                inputs = self.tokenizer.prepare_for_model(
+                    window, pair_ids=hypothesis_ids, add_special_tokens=True,
+                    return_attention_mask=True, return_tensors="pt", prepend_batch_axis=True,
+                    truncation=False,
+                )
+                inputs = {key: value.to(device) for key, value in inputs.items()}
+                outputs = self.model(**inputs)
+                logits = outputs.logits
+                if tuple(logits.shape) != (1, 3):
+                    raise ValueError("Expected logits with shape (1, 3).")
+                score = torch.softmax(logits, dim=-1)[0, self.entailment_index].item()
+                if not math.isfinite(score):
+                    raise ValueError("Model produced a non-finite entailment probability.")
+                best_score = max(best_score, float(score))
+                # No tensors escape this method, and only one pair is held at a
+                # time. No per-sentence gc.collect()/empty_cache() is necessary.
+                del inputs, outputs, logits
+                if start + budget >= len(premise_ids):
+                    break
+        return best_score
 
 
 class FactChecker(object):
@@ -424,11 +475,58 @@ class WordRecallThresholdFactChecker(FactChecker):
 
 
 class EntailmentFactChecker(FactChecker):
-    def __init__(self, ent_model):
+    """Classify with the maximum sentence-level entailment probability.
+
+    The default threshold is selected on the supplied development set.
+    Use tune_member3.py to reproduce threshold selection; inference uses no labels.
+    Member 4 can prune iter_evidence() output before expensive comparisons.
+    """
+    DEFAULT_THRESHOLD = 0.3308477997779846
+
+    def __init__(self, ent_model, threshold=None):
         self.ent_model = ent_model
+        self.threshold = float(self.DEFAULT_THRESHOLD if threshold is None else threshold)
+        if not math.isfinite(self.threshold) or not 0 < self.threshold <= 1:
+            raise ValueError("threshold must be finite and in (0, 1].")
+        # Rule-based sentence boundaries; no spaCy model download is required.
+        self.nlp = spacy.blank("en")
+        self.nlp.add_pipe("sentencizer")
+
+    def iter_evidence(self, passages):
+        """Yield cleaned, deduplicated sentences, preserving case and negation."""
+        seen = set()
+        for passage in passages:
+            # These are retrieval markup boundaries, not necessarily sentences.
+            # Keep each boundary rather than joining unrelated text fragments.
+            for segment in re.split(r"</?s\s*>", passage["text"], flags=re.IGNORECASE):
+                cleaned = " ".join(segment.split())
+                if not cleaned:
+                    continue
+                for sentence in self.nlp(cleaned).sents:
+                    evidence = sentence.text.strip()
+                    if evidence and evidence not in seen:
+                        seen.add(evidence)
+                        yield evidence
+
+    def score_details(self, fact: str, passages: List[dict]):
+        """Return (max probability, best evidence) without consulting any labels."""
+        if not fact.strip():
+            return 0.0, ""
+        best_score, best_evidence = 0.0, ""
+        for evidence in self.iter_evidence(passages):
+            probability = float(self.ent_model.check_entailment(evidence, fact))
+            if not math.isfinite(probability) or not 0 <= probability <= 1:
+                raise ValueError("check_entailment must return a probability in [0, 1].")
+            if probability > best_score:
+                best_score, best_evidence = probability, evidence
+        return best_score, best_evidence
+
+    def score(self, fact: str, passages: List[dict]) -> float:
+        """Compute the exact maximum over all evidence (no early stopping)."""
+        return self.score_details(fact, passages)[0]
 
     def predict(self, fact: str, passages: List[dict]) -> str:
-        raise Exception("Implement me")
+        return "S" if self.score(fact, passages) >= self.threshold else "NS"
 
 
 # OPTIONAL
