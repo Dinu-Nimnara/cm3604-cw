@@ -412,7 +412,15 @@ class WordRecallThresholdFactChecker(FactChecker):
     AGGREGATION = "max"
     DROP_TITLE = True
 
-    def __init__(self):
+    # Fitted on the supplied development set: 184/221 correct (83.26%).
+    # Reproduce with experiments/m2_classification/run_evaluation.py.
+    # Development tuning is permitted by the brief; it is not held-out test accuracy.
+    DEFAULT_THRESHOLD = 0.5634920634920635
+
+    def __init__(self, threshold: float = DEFAULT_THRESHOLD):
+        if not math.isfinite(threshold):
+            raise ValueError("threshold must be finite")
+        self.threshold = float(threshold)
         self.preprocessor = TextPreprocessor(**self.PREPROCESSING)
 
     def score(self, fact: str, passages: List[dict]) -> float:
@@ -420,7 +428,10 @@ class WordRecallThresholdFactChecker(FactChecker):
         return word_overlap_score(fact, passages, self.preprocessor, self.METRIC, self.AGGREGATION, self.DROP_TITLE)
 
     def predict(self, fact: str, passages: List[dict]) -> str:
-        raise Exception("Implement me")
+        # Equality is supported; tuning uses exactly the same comparison.
+        # A zero score means no lexical evidence, even at a threshold of zero.
+        value = self.score(fact, passages)
+        return "S" if value > 0.0 and value >= self.threshold else "NS"
 
 
 class EntailmentFactChecker(FactChecker):
