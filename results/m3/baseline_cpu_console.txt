@@ -1,0 +1,13 @@
+Namespace(mode='entailment', labels_path='data/dev_labeled_ChatGPT.jsonl', passages_path='data/passages_bm25_ChatGPT_humfacts.jsonl', cuda=False)
+Read 221 examples
+Method: entailment
+100%|█| 221/221 [28:36<00:00,  7.77s/it
+85      27
+12      97
+Accuracy: 182/221 = 0.8235294117647058
+Prec for S: 85/97 = 0.8762886597938144
+Rec for S: 85/112 = 0.7589285714285714
+F1 for S: 0.8133971291866029
+Prec for NS: 97/124 = 0.782258064516129
+Rec for NS: 97/109 = 0.8899082568807339
+F1 for NS: 0.8326180257510729
