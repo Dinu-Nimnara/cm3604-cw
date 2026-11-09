@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "task": "CM3604 Part 2 textual entailment, Member 3",
+  "provenance": "Transcribed and arithmetically checked from the user-provided Windows CPU console outputs; no new inference run was performed to produce these files.",
+  "model_id": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "implementation_reference": {
+    "branch": "member3/pudamya-deberta",
+    "commit": "3b98fd87695257ab49bcf3a594aeeac8cbd55a05"
+  },
+  "command": ".\\.venv\\Scripts\\python.exe factchecking_main.py --mode entailment",
+  "dataset": {
+    "labels_path": "data/dev_labeled_ChatGPT.jsonl",
+    "passages_path": "data/passages_bm25_ChatGPT_humfacts.jsonl",
+    "facts": 221,
+    "supported": 112,
+    "not_supported_including_ir": 109,
+    "ir_mapping": "IR is evaluated as NS"
+  },
+  "reported_environment": {
+    "python": "3.10.11",
+    "torch": "2.5.0+cpu",
+    "device": "cpu"
+  },
+  "confusion_matrix_order": {
+    "rows": [
+      "gold S",
+      "gold NS"
+    ],
+    "columns": [
+      "predicted S",
+      "predicted NS"
+    ]
+  },
+  "evaluation_scope": "Threshold selected on the supplied development set; not held-out test accuracy.",
+  "runs": {
+    "baseline": {
+      "threshold": 0.5,
+      "correct": 182,
+      "total": 221,
+      "accuracy": 0.8235294117647058,
+      "confusion_matrix": [
+        [
+          85,
+          27
+        ],
+        [
+          12,
+          97
+        ]
+      ],
+      "classes": {
+        "S": {
+          "precision": 0.8762886597938144,
+          "recall": 0.7589285714285714,
+          "f1": 0.8133971291866029,
+          "support": 112
+        },
+        "NS": {
+          "precision": 0.782258064516129,
+          "recall": 0.8899082568807339,
+          "f1": 0.8326180257510729,
+          "support": 109
+        }
+      },
+      "macro_f1": 0.8230075774688379,
+      "false_positives": 12,
+      "false_negatives": 27,
+      "elapsed_seconds": 1716,
+      "elapsed_display": "28m 36s",
+      "source_upload_filename": "Pasted text(20261105-205338).txt",
+      "source_transcript_sha256": "27a143cde8fb368e34adb1b32ae036b18223ca25f5d5735860e6733b1dbc38db"
+    },
+    "selected": {
+      "threshold": 0.3308477997779846,
+      "correct": 184,
+      "total": 221,
+      "accuracy": 0.832579185520362,
+      "confusion_matrix": [
+        [
+          90,
+          22
+        ],
+        [
+          15,
+          94
+        ]
+      ],
+      "classes": {
+        "S": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8035714285714286,
+          "f1": 0.8294930875576038,
+          "support": 112
+        },
+        "NS": {
+          "precision": 0.8103448275862069,
+          "recall": 0.8623853211009175,
+          "f1": 0.8355555555555555,
+          "support": 109
+        }
+      },
+      "macro_f1": 0.8325243215565796,
+      "false_positives": 15,
+      "false_negatives": 22,
+      "elapsed_seconds": 1249,
+      "elapsed_display": "20m 49s",
+      "source_upload_filename": "Pasted text(20261106-053503).txt",
+      "source_transcript_sha256": "861fa78ead7b60cda0a5a0e3ab2365384fb80cc0594f128658ac5bf2de7dda27"
+    }
+  },
+  "target_accuracy": 0.83,
+  "target_met": true,
+  "per_fact_probabilities_in_user_console": false
+}
