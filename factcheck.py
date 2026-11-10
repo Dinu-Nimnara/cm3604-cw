@@ -486,58 +486,102 @@ class WordRecallThresholdFactChecker(FactChecker):
 
 
 class EntailmentFactChecker(FactChecker):
-    """Classify with the maximum sentence-level entailment probability.
+    """Classify using max entailment over sentences and adjacent context.
 
-    The default threshold is selected on the supplied development set.
-    Use tune_member3.py to reproduce threshold selection; inference uses no labels.
-    Member 4 can prune iter_evidence() output before expensive comparisons.
-    """
-    DEFAULT_THRESHOLD = 0.3308477997779846
+Context preprocessing and threshold selected on the supplied development set.
+The separate experiment recorded 188/221 correct; verify this integration
+with the unchanged coursework driver before publishing a driver result."""
+    DEFAULT_THRESHOLD = 0.436032310128212
 
     def __init__(self, ent_model, threshold=None):
         self.ent_model = ent_model
         self.threshold = float(self.DEFAULT_THRESHOLD if threshold is None else threshold)
         if not math.isfinite(self.threshold) or not 0 < self.threshold <= 1:
-            raise ValueError("threshold must be finite and in (0, 1].")
-        # Rule-based sentence boundaries; no spaCy model download is required.
-        self.nlp = spacy.blank("en")
-        self.nlp.add_pipe("sentencizer")
+            raise ValueError('threshold must be finite and in (0, 1].')
+        self.nlp = spacy.blank('en')
+        self.nlp.add_pipe('sentencizer')
+
+    @staticmethod
+    def _clean_evidence(text):
+        import html
+        ranges, stack = ([], [])
+        for match in re.finditer('\\{\\{|\\}\\}', text):
+            if match.group() == '{{':
+                stack.append(match.start())
+            elif stack:
+                start = stack.pop()
+                if re.match('\\{\\{\\s*(?:cite\\b|citation\\b)', text[start:], re.I):
+                    ranges.append((start, match.end()))
+        for start, end in sorted(ranges, reverse=True):
+            if not any((a <= start and end <= b and ((a, b) != (start, end)) for a, b in ranges)):
+                text = text[:start] + ' ' + text[end:]
+        text = re.sub('<ref\\b[^>]*>.*?</ref\\s*>', ' ', text, flags=re.I | re.S)
+        text = re.sub('<[^>]+>', ' ', text)
+        text = re.sub('\\[\\[([^\\]|]+)\\|([^\\]]+)\\]\\]', '\\2', text)
+        text = re.sub('\\[\\[([^\\]]+)\\]\\]', '\\1', text)
+        text = re.sub('\\[(?:https?://\\S+)\\s+([^\\]]+)\\]', '\\1', text)
+        return ' '.join(html.unescape(text).split())
+
+    @staticmethod
+    def _sentence_units(text, nlp, repair_quotes=False):
+        sentences = [s.text.strip() for s in nlp(text).sents if s.text.strip()]
+        if not repair_quotes:
+            return sentences
+        result, pending, quote = ([], [], None)
+        for sentence in sentences:
+            pending.append(sentence)
+            for char in sentence:
+                if char == '"':
+                    quote = None if quote == '"' else '"' if quote is None else quote
+                elif char == '“' and quote is None:
+                    quote = '”'
+                elif char == '”' and quote == '”':
+                    quote = None
+            if quote is None:
+                result.append(' '.join(pending))
+                pending = []
+        if pending:
+            result.append(' '.join(pending))
+        return result
 
     def iter_evidence(self, passages):
-        """Yield cleaned, deduplicated sentences, preserving case and negation."""
+        mode = 'context'
+        nlp = self.nlp
         seen = set()
         for passage in passages:
-            # These are retrieval markup boundaries, not necessarily sentences.
-            # Keep each boundary rather than joining unrelated text fragments.
-            for segment in re.split(r"</?s\s*>", passage["text"], flags=re.IGNORECASE):
-                cleaned = " ".join(segment.split())
+            for segment in re.split('</?s\\s*>', passage['text'], flags=re.I):
+                cleaned = self._clean_evidence(segment)
                 if not cleaned:
                     continue
-                for sentence in self.nlp(cleaned).sents:
-                    evidence = sentence.text.strip()
-                    if evidence and evidence not in seen:
-                        seen.add(evidence)
-                        yield evidence
+                sentences = self._sentence_units(cleaned, nlp, mode in {'split', 'context'})
+                for index, sentence in enumerate(sentences):
+                    candidates = [sentence]
+                    if mode == 'context' and index:
+                        candidates.append(sentences[index - 1] + ' ' + sentence)
+                    for evidence in candidates:
+                        if evidence not in seen:
+                            seen.add(evidence)
+                            yield evidence
 
     def score_details(self, fact: str, passages: List[dict]):
         """Return (max probability, best evidence) without consulting any labels."""
         if not fact.strip():
-            return 0.0, ""
-        best_score, best_evidence = 0.0, ""
+            return (0.0, '')
+        best_score, best_evidence = (0.0, '')
         for evidence in self.iter_evidence(passages):
             probability = float(self.ent_model.check_entailment(evidence, fact))
             if not math.isfinite(probability) or not 0 <= probability <= 1:
-                raise ValueError("check_entailment must return a probability in [0, 1].")
+                raise ValueError('check_entailment must return a probability in [0, 1].')
             if probability > best_score:
-                best_score, best_evidence = probability, evidence
-        return best_score, best_evidence
+                best_score, best_evidence = (probability, evidence)
+        return (best_score, best_evidence)
 
     def score(self, fact: str, passages: List[dict]) -> float:
         """Compute the exact maximum over all evidence (no early stopping)."""
         return self.score_details(fact, passages)[0]
 
     def predict(self, fact: str, passages: List[dict]) -> str:
-        return "S" if self.score(fact, passages) >= self.threshold else "NS"
+        return 'S' if self.score(fact, passages) >= self.threshold else 'NS'
 
 
 # OPTIONAL
