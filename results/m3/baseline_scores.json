@@ -1,0 +1,1563 @@
+{
+  "schema_version": 1,
+  "model_id": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "inference_fingerprint": "4a0eae08cd785cd37bff2d657e31e9e25499ab84d309227984b038a2c2ea9831",
+  "dataset_fingerprint": "517a57e1eaa66d5e5de7d1370f052ae37419625cddfd3c7f6574973725d86e76",
+  "total": 221,
+  "records": [
+    {
+      "index": 0,
+      "fact": "Marianne McAndrew is an American.",
+      "gold": "NS",
+      "score": 0.06768494099378586,
+      "best_evidence": "By 1971, she had made appearances in popular TV shows including \"Hawaii 5-0\", \"Mannix\", \"Cannon\" and \"Love, American Style\" One notable later film role was her co-starring role in \"The Bat People\", with her husband Stewart Moss."
+    },
+    {
+      "index": 1,
+      "fact": "Marianne McAndrew is an actress.",
+      "gold": "S",
+      "score": 0.9991807341575623,
+      "best_evidence": "Marianne McAndrew Marianne Christine McAndrew is an actress known for her role as Irene Molloy in the film \"Hello, Dolly!\""
+    },
+    {
+      "index": 2,
+      "fact": "Marianne McAndrew is a singer.",
+      "gold": "NS",
+      "score": 0.8041390180587769,
+      "best_evidence": "experienced something of a resurgence in popularity with the release of \"WALL-E\", which featured clips from the film, including a duet with McAndrew's character (but McAndrew did not do her own singing in the film, which some news outlets claimed in articles about \"WALL-E\")."
+    },
+    {
+      "index": 3,
+      "fact": "Marianne McAndrew was born on November 21, 1942.",
+      "gold": "NS",
+      "score": 0.009075186215341091,
+      "best_evidence": "References."
+    },
+    {
+      "index": 4,
+      "fact": "Marianne McAndrew was born in Cleveland.",
+      "gold": "NS",
+      "score": 0.04027452692389488,
+      "best_evidence": "References."
+    },
+    {
+      "index": 5,
+      "fact": "Cleveland is in Ohio.",
+      "gold": "NS",
+      "score": 0.9936135411262512,
+      "best_evidence": "Trivisonno was born in East Cleveland, Ohio, and attended Mayfield High School in"
+    },
+    {
+      "index": 6,
+      "fact": "Gerhard Fischer is an inventor.",
+      "gold": "S",
+      "score": 0.9972405433654785,
+      "best_evidence": "Gerhard Fischer (inventor) Gerhard Julius Richard Fischer later Gerhard Julius Richard Fisher, Gerhard R. Fisher (March 18, 1899 – May 2, 1988) was a U.S. entrepreneur of German descent."
+    },
+    {
+      "index": 7,
+      "fact": "Gerhard Fischer is an entrepreneur.",
+      "gold": "S",
+      "score": 0.9925034046173096,
+      "best_evidence": "Gerhard Fischer (inventor) Gerhard Julius Richard Fischer later Gerhard Julius Richard Fisher, Gerhard R. Fisher (March 18, 1899 – May 2, 1988) was a U.S. entrepreneur of German descent."
+    },
+    {
+      "index": 8,
+      "fact": "Gerhard Fischer is best known for inventing a metal detector.",
+      "gold": "S",
+      "score": 0.0063652824610471725,
+      "best_evidence": "References. - - -"
+    },
+    {
+      "index": 9,
+      "fact": "Gerhard Fischer invented the first handheld, battery-operated metal detector.",
+      "gold": "S",
+      "score": 0.26700136065483093,
+      "best_evidence": "Biography."
+    },
+    {
+      "index": 10,
+      "fact": "Gerhard Fischer invented the first handheld, battery-operated metal detector in 1931.",
+      "gold": "NS",
+      "score": 0.13228394091129303,
+      "best_evidence": "Biography."
+    },
+    {
+      "index": 11,
+      "fact": "He founded the Fischer Research Laboratory.",
+      "gold": "S",
+      "score": 0.9983044862747192,
+      "best_evidence": "After studying electrical engineering at the Dresden University, Fischer emigrated to the U.S. In 1931, he founded Fisher Research Laboratory, Inc. in Palo Alto, where he served as president until his retirement in 1967."
+    },
+    {
+      "index": 12,
+      "fact": "The Fischer Research Laboratory was founded in 1936.",
+      "gold": "NS",
+      "score": 0.042921245098114014,
+      "best_evidence": "References. - - -"
+    },
+    {
+      "index": 13,
+      "fact": "The Fischer Research Laboratory became one of the world's leading manufacturers of metal detectors.",
+      "gold": "NS",
+      "score": 0.1545235961675644,
+      "best_evidence": "References. - - -"
+    },
+    {
+      "index": 14,
+      "fact": "Joey D. Vieira is an American.",
+      "gold": "S",
+      "score": 0.9986935257911682,
+      "best_evidence": "Joey D. Vieira Joseph Douglas Vieira, known as Joey D. Vieira (born April 8, 1944), is an American film and television actor."
+    },
+    {
+      "index": 15,
+      "fact": "Joey D. Vieira is an actor.",
+      "gold": "S",
+      "score": 0.9991482496261597,
+      "best_evidence": "Joey D. Vieira Joseph Douglas Vieira, known as Joey D. Vieira (born April 8, 1944), is an American film and television actor."
+    },
+    {
+      "index": 16,
+      "fact": "Joey D. Vieira is a stunt performer.",
+      "gold": "NS",
+      "score": 0.12396829575300217,
+      "best_evidence": "Family."
+    },
+    {
+      "index": 17,
+      "fact": "Joey D. Vieira was born on July 23, 1937.",
+      "gold": "NS",
+      "score": 0.007554939482361078,
+      "best_evidence": "Family."
+    },
+    {
+      "index": 18,
+      "fact": "Joey D. Vieira was born in California, USA.",
+      "gold": "NS",
+      "score": 0.029757259413599968,
+      "best_evidence": "Family."
+    },
+    {
+      "index": 19,
+      "fact": "She transitioned to acting.",
+      "gold": "NS",
+      "score": 0.812103271484375,
+      "best_evidence": "Virginia Valli Virginia Valli (died September 24, 1968) was an American stage and film actress whose motion picture career started in the silent film era and lasted until the beginning of the sound film era of the 1930s."
+    },
+    {
+      "index": 20,
+      "fact": "She appeared in films.",
+      "gold": "S",
+      "score": 0.9985659718513489,
+      "best_evidence": "Her subsequent film roles were small: 1995's \"Just Cause\" with Sean Connery and Laurence Fishburne, and 1996's \"Educating Matt Waters\" and \"The Preacher's Wife\" with Whitney Houston."
+    },
+    {
+      "index": 21,
+      "fact": "She appeared in A Bronx Tale.",
+      "gold": "S",
+      "score": 0.9975888729095459,
+      "best_evidence": "Hicks is best known for her acting in such films as 1993's American crime drama film \"A Bronx Tale\" and her singing in such work as her 1997 debut studio album \"This Time\" which peaked at No."
+    },
+    {
+      "index": 22,
+      "fact": "A Bronx Tale is a film.",
+      "gold": "S",
+      "score": 0.9985509514808655,
+      "best_evidence": "Hicks is best known for her acting in such films as 1993's American crime drama film \"A Bronx Tale\" and her singing in such work as her 1997 debut studio album \"This Time\" which peaked at No."
+    },
+    {
+      "index": 23,
+      "fact": "A Bronx Tale was released in 1993.",
+      "gold": "S",
+      "score": 0.995134174823761,
+      "best_evidence": "Hicks is best known for her acting in such films as 1993's American crime drama film \"A Bronx Tale\" and her singing in such work as her 1997 debut studio album \"This Time\" which peaked at No."
+    },
+    {
+      "index": 24,
+      "fact": "She appeared in Just Cause.",
+      "gold": "S",
+      "score": 0.993330180644989,
+      "best_evidence": "Her subsequent film roles were small: 1995's \"Just Cause\" with Sean Connery and Laurence Fishburne, and 1996's \"Educating Matt Waters\" and \"The Preacher's Wife\" with Whitney Houston."
+    },
+    {
+      "index": 25,
+      "fact": "Just Cause is a film.",
+      "gold": "S",
+      "score": 0.996228814125061,
+      "best_evidence": "Her subsequent film roles were small: 1995's \"Just Cause\" with Sean Connery and Laurence Fishburne, and 1996's \"Educating Matt Waters\" and \"The Preacher's Wife\" with Whitney Houston."
+    },
+    {
+      "index": 26,
+      "fact": "Just Cause was released in 1995.",
+      "gold": "S",
+      "score": 0.9917565584182739,
+      "best_evidence": "Her subsequent film roles were small: 1995's \"Just Cause\" with Sean Connery and Laurence Fishburne, and 1996's \"Educating Matt Waters\" and \"The Preacher's Wife\" with Whitney Houston."
+    },
+    {
+      "index": 27,
+      "fact": "She appeared in Belly.",
+      "gold": "S",
+      "score": 0.9959381818771362,
+      "best_evidence": "She appeared in the movie \"Belly\" in 1998."
+    },
+    {
+      "index": 28,
+      "fact": "Belly is a film.",
+      "gold": "S",
+      "score": 0.9967768788337708,
+      "best_evidence": "After collaborating on the video for \"Silly\", Williams cast Hicks as in his directorial film debut, 1998's \"Belly\", as Keisha, DMX's girlfriend."
+    },
+    {
+      "index": 29,
+      "fact": "Belly was released in 1998.",
+      "gold": "S",
+      "score": 0.9926302433013916,
+      "best_evidence": "After collaborating on the video for \"Silly\", Williams cast Hicks as in his directorial film debut, 1998's \"Belly\", as Keisha, DMX's girlfriend."
+    },
+    {
+      "index": 30,
+      "fact": "He is a member of the Democratic Party.",
+      "gold": "NS",
+      "score": 0.014126178808510303,
+      "best_evidence": "References."
+    },
+    {
+      "index": 31,
+      "fact": "He has served as a mayor.",
+      "gold": "NS",
+      "score": 0.023599203675985336,
+      "best_evidence": "In 1947."
+    },
+    {
+      "index": 32,
+      "fact": "He is the mayor of Palermo.",
+      "gold": "NS",
+      "score": 0.20242829620838165,
+      "best_evidence": "References."
+    },
+    {
+      "index": 33,
+      "fact": "He has been mayor of Palermo since June 2017.",
+      "gold": "NS",
+      "score": 0.2516117990016937,
+      "best_evidence": "References."
+    },
+    {
+      "index": 34,
+      "fact": "Tusa has been involved in various cultural initiatives.",
+      "gold": "NS",
+      "score": 0.7056112885475159,
+      "best_evidence": "L'urbanistica di Solunto, 1970 - Anastylosis ad Agrigento Tempio di Eracle e Selinunte Tempio C, 1975 - La scultura in pietra di Selinunte, 1984 - La preistoria in Sicilia, 1987 - Selinunte nella mia vita, 1990 - Segesta, 1991 - Siciliani illustri: Antonino Salinas, 1995 - Sarcofagi romani in Sicilia, 1995 - Il parco archeologico di Selinunte, 2011"
+    },
+    {
+      "index": 35,
+      "fact": "Tusa has worked to promote Palermo as a cultural destination.",
+      "gold": "NS",
+      "score": 0.2852879762649536,
+      "best_evidence": "References."
+    },
+    {
+      "index": 36,
+      "fact": "Jean Daullé was born in 1703.",
+      "gold": "S",
+      "score": 0.9979700446128845,
+      "best_evidence": "Jean Daullé Jean Daullé (18 May 1703 – 23 April 1763) was a French engraver."
+    },
+    {
+      "index": 37,
+      "fact": "Jean Daullé died in 1763.",
+      "gold": "S",
+      "score": 0.9951106905937195,
+      "best_evidence": "Jean Daullé Jean Daullé (18 May 1703 – 23 April 1763) was a French engraver."
+    },
+    {
+      "index": 38,
+      "fact": "Jean Daullé was French.",
+      "gold": "S",
+      "score": 0.9975029826164246,
+      "best_evidence": "Jean Daullé Jean Daullé (18 May 1703 – 23 April 1763) was a French engraver."
+    },
+    {
+      "index": 39,
+      "fact": "Jean Daullé was an engraver.",
+      "gold": "S",
+      "score": 0.998570442199707,
+      "best_evidence": "Jean Daullé Jean Daullé (18 May 1703 – 23 April 1763) was a French engraver."
+    },
+    {
+      "index": 40,
+      "fact": "Jean Daullé was a printmaker.",
+      "gold": "NS",
+      "score": 0.9239872694015503,
+      "best_evidence": "Jean Daullé Jean Daullé (18 May 1703 – 23 April 1763) was a French engraver."
+    },
+    {
+      "index": 41,
+      "fact": "Jean Daullé was known for his portraits.",
+      "gold": "S",
+      "score": 0.14518781006336212,
+      "best_evidence": "He engraved several portraits and plates of historical and other subjects, which are chiefly executed with the graver in a clear and firm style, which entitles him to rank with the ablest artists of his time."
+    },
+    {
+      "index": 42,
+      "fact": "Jean Daullé was known for his religious subjects.",
+      "gold": "NS",
+      "score": 0.15776589512825012,
+      "best_evidence": "Charles Edward Stuart, son of the Pretender\". - \""
+    },
+    {
+      "index": 43,
+      "fact": "Fernandinho represents the Brazil national team.",
+      "gold": "NS",
+      "score": 0.31338146328926086,
+      "best_evidence": "Fernando (footballer, born 1984) Fernando de Jesus Ribeiro (born 7 July 1984), more commonly known as Fernando is a Brazilian football goalkeeper, who currently plays for Pars Jonoubi in the Persian Gulf Pro League."
+    },
+    {
+      "index": 44,
+      "fact": "Fernandinho has represented the Brazil national team since 2011.",
+      "gold": "NS",
+      "score": 0.002568403957411647,
+      "best_evidence": "Honours.:Individual. -"
+    },
+    {
+      "index": 45,
+      "fact": "Fernandinho has earned over 50 caps.",
+      "gold": "NS",
+      "score": 0.00236711953766644,
+      "best_evidence": "Honours.:Individual. -"
+    },
+    {
+      "index": 46,
+      "fact": "Fernandinho participated in the 2014 FIFA World Cup.",
+      "gold": "NS",
+      "score": 0.00896174181252718,
+      "best_evidence": "Honours. -"
+    },
+    {
+      "index": 47,
+      "fact": "Fernandinho participated in the 2018 FIFA World Cup.",
+      "gold": "NS",
+      "score": 0.009095857851207256,
+      "best_evidence": "Honours. -"
+    },
+    {
+      "index": 48,
+      "fact": "He moved to Dutch club FC Groningen.",
+      "gold": "S",
+      "score": 0.9113818407058716,
+      "best_evidence": "In January 2019, he joined Premier League club Manchester City and was immediately loaned to Eredivisie club Groningen, until the summer of 2020."
+    },
+    {
+      "index": 49,
+      "fact": "He made the move in 2019.",
+      "gold": "S",
+      "score": 0.9940859079360962,
+      "best_evidence": "In January 2019, he joined Premier League club Manchester City and was immediately loaned to Eredivisie club Groningen, until the summer of 2020."
+    },
+    {
+      "index": 50,
+      "fact": "He has become a regular starter in the team's defense.",
+      "gold": "NS",
+      "score": 0.014876793138682842,
+      "best_evidence": "International career."
+    },
+    {
+      "index": 51,
+      "fact": "Itakura has represented Japan at the Under-19-level.",
+      "gold": "NS",
+      "score": 0.3218396008014679,
+      "best_evidence": "In May 2017, Itakura was called up to the Japan U-20 national team for the 2017 U-20 World Cup."
+    },
+    {
+      "index": 52,
+      "fact": "Itakura has represented Japan at the Under-23 level.",
+      "gold": "NS",
+      "score": 0.11039649695158005,
+      "best_evidence": "In May 2017, Itakura was called up to the Japan U-20 national team for the 2017 U-20 World Cup."
+    },
+    {
+      "index": 53,
+      "fact": "Itakura made his senior debut for the national team in 2019.",
+      "gold": "S",
+      "score": 0.38500460982322693,
+      "best_evidence": "national football team for 2019 Copa América and made his debut on 20 June 2019 in the game against Uruguay, as a starter."
+    },
+    {
+      "index": 54,
+      "fact": "He was born on December 5, 1999.",
+      "gold": "NS",
+      "score": 0.0020188395865261555,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 55,
+      "fact": "He was born in Hull.",
+      "gold": "NS",
+      "score": 0.002671681111678481,
+      "best_evidence": "Later years."
+    },
+    {
+      "index": 56,
+      "fact": "Hull is in England.",
+      "gold": "NS",
+      "score": 0.15487080812454224,
+      "best_evidence": "Later years."
+    },
+    {
+      "index": 57,
+      "fact": "Houghton has established himself as one of the top hookers in the Super League.",
+      "gold": "NS",
+      "score": 0.05894237011671066,
+      "best_evidence": "Later years."
+    },
+    {
+      "index": 58,
+      "fact": "He was named Hull FC's player of the year.",
+      "gold": "NS",
+      "score": 0.11474122107028961,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 59,
+      "fact": "He was named player of the year in 2018.",
+      "gold": "NS",
+      "score": 0.03609292581677437,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 60,
+      "fact": "Mike Trivisonno is a radio personality.",
+      "gold": "S",
+      "score": 0.9886849522590637,
+      "best_evidence": "Mike Trivisonno Mike Trivisonno (September 20, 1947 – October 28, 2021) was an American radio broadcaster, known for hosting his own self-titled afternoon talk show on Cleveland radio station WTAM AM 1100."
+    },
+    {
+      "index": 61,
+      "fact": "Mike Trivisonno is well-known.",
+      "gold": "S",
+      "score": 0.8198074698448181,
+      "best_evidence": "Trivisonno's popularity and high ratings led him to be ranked numerous times among \"Talkers Magazine's\" \"Heavy Hundred\", including most recently in 2015, when he came in at #72."
+    },
+    {
+      "index": 62,
+      "fact": "Mike Trivisonno is from Cleveland.",
+      "gold": "S",
+      "score": 0.8673350811004639,
+      "best_evidence": "Trivisonno was born in East Cleveland, Ohio, and attended Mayfield High School in"
+    },
+    {
+      "index": 63,
+      "fact": "Cleveland is in Ohio.",
+      "gold": "S",
+      "score": 0.9936135411262512,
+      "best_evidence": "Trivisonno was born in East Cleveland, Ohio, and attended Mayfield High School in"
+    },
+    {
+      "index": 64,
+      "fact": "Trivisonno started his radio career at WIXY 1260 AM.",
+      "gold": "NS",
+      "score": 0.06307326257228851,
+      "best_evidence": "His son, Michael Jr., owns an upscale restaurant called Trivs in suburban Strongsville, Ohio."
+    },
+    {
+      "index": 65,
+      "fact": "Trivisonno worked at WMMS.",
+      "gold": "NS",
+      "score": 0.21295851469039917,
+      "best_evidence": "Mike Trivisonno Mike Trivisonno (September 20, 1947 – October 28, 2021) was an American radio broadcaster, known for hosting his own self-titled afternoon talk show on Cleveland radio station WTAM AM 1100."
+    },
+    {
+      "index": 66,
+      "fact": "Trivisonno worked at WTAM.",
+      "gold": "S",
+      "score": 0.995142936706543,
+      "best_evidence": "Mike Trivisonno Mike Trivisonno (September 20, 1947 – October 28, 2021) was an American radio broadcaster, known for hosting his own self-titled afternoon talk show on Cleveland radio station WTAM AM 1100."
+    },
+    {
+      "index": 67,
+      "fact": "Trivisonno worked at WKNR.",
+      "gold": "NS",
+      "score": 0.0390140637755394,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 68,
+      "fact": "Estes is the grandson of Sleepy John Estes.",
+      "gold": "NS",
+      "score": 0.14876620471477509,
+      "best_evidence": "Estes comes from a long line of football players in his family both collegiately and professionally: - His grandfather Pat Hiram and uncle Roy Hiram were All-American running backs at San Jose State University - His brother Patrick Estes was a defensive tackle at the University of Nevada in 2002 - His uncle was All-Pro offensive tackle Rocky Freitas of the Detroit Lions - His cousins Makai Freitas was on the Arizona Wildcats in 2001, Makoa Freitas was on the Arizona Wildcats 2003 and the Indianapolis Colts, Kahai 2008 and Kainoa LaCount 2010 at the University of Hawaii, and Mana Greig University of Oregon 2014."
+    },
+    {
+      "index": 69,
+      "fact": "Sleepy John Estes is a blues musician.",
+      "gold": "NS",
+      "score": 0.06460249423980713,
+      "best_evidence": "College career."
+    },
+    {
+      "index": 70,
+      "fact": "Sleepy John Estes is legendary.",
+      "gold": "NS",
+      "score": 0.05237554386258125,
+      "best_evidence": "College career."
+    },
+    {
+      "index": 71,
+      "fact": "Estes learned to play guitar from his grandfather.",
+      "gold": "NS",
+      "score": 0.030661968514323235,
+      "best_evidence": "Coaching career."
+    },
+    {
+      "index": 72,
+      "fact": "He currently resides in Nashville.",
+      "gold": "NS",
+      "score": 0.019404903054237366,
+      "best_evidence": "Football relatives."
+    },
+    {
+      "index": 73,
+      "fact": "Nashville is in Tennessee.",
+      "gold": "NS",
+      "score": 0.1087428405880928,
+      "best_evidence": "College career."
+    },
+    {
+      "index": 74,
+      "fact": "He continues to tour.",
+      "gold": "NS",
+      "score": 0.25595152378082275,
+      "best_evidence": "Football relatives."
+    },
+    {
+      "index": 75,
+      "fact": "He continues to record new music.",
+      "gold": "NS",
+      "score": 0.12569987773895264,
+      "best_evidence": "Football relatives."
+    },
+    {
+      "index": 76,
+      "fact": "Katsu has written novels.",
+      "gold": "S",
+      "score": 0.9759308695793152,
+      "best_evidence": "She spent the majority of her youth living near Concord, Massachusetts, to which she attributes her interest in the early American history featured in her novels."
+    },
+    {
+      "index": 77,
+      "fact": "The Taker trilogy is a novel by Katsu.",
+      "gold": "S",
+      "score": 0.2237226366996765,
+      "best_evidence": "Awards. \""
+    },
+    {
+      "index": 78,
+      "fact": "The Hunger is a novel by Katsu.",
+      "gold": "S",
+      "score": 0.18425332009792328,
+      "best_evidence": "Awards. \""
+    },
+    {
+      "index": 79,
+      "fact": "The Deep is a novel by Katsu.",
+      "gold": "S",
+      "score": 0.18044576048851013,
+      "best_evidence": "Awards. \""
+    },
+    {
+      "index": 80,
+      "fact": "Red Widow is a novel by Katsu.",
+      "gold": "S",
+      "score": 0.1853475123643875,
+      "best_evidence": "Awards. \""
+    },
+    {
+      "index": 81,
+      "fact": "Katsu currently lives in Virginia.",
+      "gold": "NS",
+      "score": 0.23467330634593964,
+      "best_evidence": "Bibliography."
+    },
+    {
+      "index": 82,
+      "fact": "Katsu lives with her husband.",
+      "gold": "S",
+      "score": 0.9406647086143494,
+      "best_evidence": "She lives in the Washington, DC area with her husband, musician Bruce Katsu."
+    },
+    {
+      "index": 83,
+      "fact": "Rennie Fritchie is a public servant.",
+      "gold": "S",
+      "score": 0.9661806225776672,
+      "best_evidence": "She holds an honorary Professorship in Creative Leadership at York University and is Pro-Chancellor at Southampton University, a Civil Service Commissioner and Vice-Chair of the Stroud and Swindon Building Society."
+    },
+    {
+      "index": 84,
+      "fact": "Rennie Fritchie is British.",
+      "gold": "S",
+      "score": 0.9967297315597534,
+      "best_evidence": "Rennie Fritchie, Baroness Fritchie Irene Tordoff Fritchie, Baroness Fritchie, DBE (née Fennell; born 29 April 1942 in Fife, Scotland), known as Rennie Fritchie, is a British crossbench peer."
+    },
+    {
+      "index": 85,
+      "fact": "Rennie Fritchie is a Baroness.",
+      "gold": "S",
+      "score": 0.9975996613502502,
+      "best_evidence": "Rennie Fritchie, Baroness Fritchie Irene Tordoff Fritchie, Baroness Fritchie, DBE (née Fennell; born 29 April 1942 in Fife, Scotland), known as Rennie Fritchie, is a British crossbench peer."
+    },
+    {
+      "index": 86,
+      "fact": "Rennie Fritchie is Baroness Fritchie.",
+      "gold": "S",
+      "score": 0.9951476454734802,
+      "best_evidence": "Rennie Fritchie, Baroness Fritchie Irene Tordoff Fritchie, Baroness Fritchie, DBE (née Fennell; born 29 April 1942 in Fife, Scotland), known as Rennie Fritchie, is a British crossbench peer."
+    },
+    {
+      "index": 87,
+      "fact": "Rennie Fritchie is a crossbench member of the House of Lords.",
+      "gold": "S",
+      "score": 0.9569485187530518,
+      "best_evidence": "On 31 May 2005 she was made a life peer as Baroness Fritchie, of Gloucester in the County of Gloucestershire, and she sits as a crossbencher in the House of Lords."
+    },
+    {
+      "index": 88,
+      "fact": "He had a brief stint with Universitario de Deportes.",
+      "gold": "NS",
+      "score": 0.010081409476697445,
+      "best_evidence": "a February 2007 UNCAF Nations Cup match against Nicaragua."
+    },
+    {
+      "index": 89,
+      "fact": "His stint with Universitario de Deportes was in 2003.",
+      "gold": "NS",
+      "score": 0.01953008957207203,
+      "best_evidence": "a February 2007 UNCAF Nations Cup match against Nicaragua."
+    },
+    {
+      "index": 90,
+      "fact": "He then moved to Mexico.",
+      "gold": "NS",
+      "score": 0.0008807533886283636,
+      "best_evidence": "His final international game was an October 2010 friendly match against Costa Rica."
+    },
+    {
+      "index": 91,
+      "fact": "He went to Mexico to play for Club Necaxa.",
+      "gold": "NS",
+      "score": 0.0011626242194324732,
+      "best_evidence": "International career."
+    },
+    {
+      "index": 92,
+      "fact": "Salazar played for the Peru national team from 1995.",
+      "gold": "NS",
+      "score": 0.0010406315559521317,
+      "best_evidence": "Manuel Salazar (footballer) Manuel Alejandro Salazar Rivas (born January 23, 1986 in San Salvador) is a retired Salvadoran professional footballer."
+    },
+    {
+      "index": 93,
+      "fact": "Salazar left the Peru national team in 2003.",
+      "gold": "NS",
+      "score": 0.0021931028459221125,
+      "best_evidence": "In December 2008, Salazar along with his club and national team teammate Carlos Monteagudo, both were invited to train with Mexican Primera División A team Monterrey 1a."
+    },
+    {
+      "index": 94,
+      "fact": "Salazar earned 28 caps for the Peru national team.",
+      "gold": "NS",
+      "score": 0.0024195988662540913,
+      "best_evidence": "A (effectively CF Monterreys reserve team), with the hopes of signing with the club's second division side."
+    },
+    {
+      "index": 95,
+      "fact": "Salazar scored six goals for the Peru national team.",
+      "gold": "NS",
+      "score": 0.002826528623700142,
+      "best_evidence": "A (effectively CF Monterreys reserve team), with the hopes of signing with the club's second division side."
+    },
+    {
+      "index": 96,
+      "fact": "He grew up in a Christian household.",
+      "gold": "NS",
+      "score": 0.13475251197814941,
+      "best_evidence": "References."
+    },
+    {
+      "index": 97,
+      "fact": "He became a Christian at a young age.",
+      "gold": "NS",
+      "score": 0.029746664687991142,
+      "best_evidence": "References."
+    },
+    {
+      "index": 98,
+      "fact": "He was a pastor in South Africa.",
+      "gold": "S",
+      "score": 0.9651322364807129,
+      "best_evidence": "As a young ordained minister with the South African Assemblies of God, Hedding confronted the apartheid system from the pulpit and was forced to flee his homeland."
+    },
+    {
+      "index": 99,
+      "fact": "He served for many years as a pastor.",
+      "gold": "S",
+      "score": 0.31192639470100403,
+      "best_evidence": "References."
+    },
+    {
+      "index": 100,
+      "fact": "He served as the Executive Director of the International Christian Embassy Jerusalem.",
+      "gold": "S",
+      "score": 0.9924323558807373,
+      "best_evidence": "Malcolm Hedding has been involved with the work of the International Christian Embassy Jerusalem (ICEJ) since 1981 and has been executive director since 2000."
+    },
+    {
+      "index": 101,
+      "fact": "Hibo Wardere is a campaigner.",
+      "gold": "S",
+      "score": 0.998832643032074,
+      "best_evidence": "Hibo Wardere Hibo Wardere is a Somali-born campaigner against female genital mutilation (FGM), author, and public speaker."
+    },
+    {
+      "index": 102,
+      "fact": "Hibo Wardere is an author.",
+      "gold": "S",
+      "score": 0.9986143112182617,
+      "best_evidence": "Hibo Wardere Hibo Wardere is a Somali-born campaigner against female genital mutilation (FGM), author, and public speaker."
+    },
+    {
+      "index": 103,
+      "fact": "Hibo Wardere is Somali-born.",
+      "gold": "S",
+      "score": 0.9971613883972168,
+      "best_evidence": "Hibo Wardere Hibo Wardere is a Somali-born campaigner against female genital mutilation (FGM), author, and public speaker."
+    },
+    {
+      "index": 104,
+      "fact": "Hibo Wardere is based in the United Kingdom.",
+      "gold": "S",
+      "score": 0.9908127188682556,
+      "best_evidence": "She currently resides in Walthamstow, London, where she worked as a mediator and a regular FGM educator for Waltham Forest Borough."
+    },
+    {
+      "index": 105,
+      "fact": "She has worked with a number of organizations.",
+      "gold": "NS",
+      "score": 0.6451437473297119,
+      "best_evidence": "Her testimonials and campaigning work have made her one of Britain's most prominent campaigners about FGM and she has appeared in numerous publications, including the \"Telegraph\", the BBC, and \"The Guardian\"."
+    },
+    {
+      "index": 106,
+      "fact": "She has worked with the World Health Organization.",
+      "gold": "NS",
+      "score": 0.039334867149591446,
+      "best_evidence": "Early life."
+    },
+    {
+      "index": 107,
+      "fact": "She has worked to educate communities about the dangers of FGM.",
+      "gold": "S",
+      "score": 0.7779415845870972,
+      "best_evidence": "She also delivers awareness raising sessions to doctors and the Police to assist in their understanding of FGM."
+    },
+    {
+      "index": 108,
+      "fact": "She has worked to promote the elimination of FGM.",
+      "gold": "S",
+      "score": 0.9932805895805359,
+      "best_evidence": "Hibo Wardere Hibo Wardere is a Somali-born campaigner against female genital mutilation (FGM), author, and public speaker."
+    },
+    {
+      "index": 109,
+      "fact": "Nisar Ahmad Kakru was Kashmiri.",
+      "gold": "NS",
+      "score": 0.9909051656723022,
+      "best_evidence": "Nisar Ahmad Kakru Nisar Ahmad Kakru (born 26 October 1949 Baramulla, Kashmir, India) was the Chief Justice of the High Court of Andhra Pradesh, India from 19 February 2010 to 26 October 2011."
+    },
+    {
+      "index": 110,
+      "fact": "Nisar Ahmad Kakru was a prominent poet.",
+      "gold": "NS",
+      "score": 0.23444864153862,
+      "best_evidence": "Practice."
+    },
+    {
+      "index": 111,
+      "fact": "Nisar Ahmad Kakru was a prominent writer.",
+      "gold": "NS",
+      "score": 0.2923458516597748,
+      "best_evidence": "Practice."
+    },
+    {
+      "index": 112,
+      "fact": "Nisar Ahmad Kakru was a prominent scholar.",
+      "gold": "NS",
+      "score": 0.16368602216243744,
+      "best_evidence": "Practice."
+    },
+    {
+      "index": 113,
+      "fact": "His poems are known for their simplicity.",
+      "gold": "NS",
+      "score": 0.1097915843129158,
+      "best_evidence": "Practice."
+    },
+    {
+      "index": 114,
+      "fact": "His poems are known for their clarity.",
+      "gold": "NS",
+      "score": 0.12699030339717865,
+      "best_evidence": "Practice."
+    },
+    {
+      "index": 115,
+      "fact": "His poems are known for their use of everyday language.",
+      "gold": "NS",
+      "score": 0.15287785232067108,
+      "best_evidence": "Practice."
+    },
+    {
+      "index": 116,
+      "fact": "Don Featherstone was born in 1936.",
+      "gold": "S",
+      "score": 0.9986920952796936,
+      "best_evidence": "Don Featherstone (artist) Donald Featherstone (January 25, 1936 – June 22, 2015) was an American artist most widely known for his 1957 creation of the plastic pink flamingo while working for Union Products."
+    },
+    {
+      "index": 117,
+      "fact": "Don Featherstone died in 2015.",
+      "gold": "S",
+      "score": 0.9975228905677795,
+      "best_evidence": "Don Featherstone (artist) Donald Featherstone (January 25, 1936 – June 22, 2015) was an American artist most widely known for his 1957 creation of the plastic pink flamingo while working for Union Products."
+    },
+    {
+      "index": 118,
+      "fact": "Don Featherstone was an American.",
+      "gold": "S",
+      "score": 0.9989474415779114,
+      "best_evidence": "Don Featherstone (artist) Donald Featherstone (January 25, 1936 – June 22, 2015) was an American artist most widely known for his 1957 creation of the plastic pink flamingo while working for Union Products."
+    },
+    {
+      "index": 119,
+      "fact": "Don Featherstone was an artist.",
+      "gold": "S",
+      "score": 0.999390721321106,
+      "best_evidence": "Don Featherstone (artist) Donald Featherstone (January 25, 1936 – June 22, 2015) was an American artist most widely known for his 1957 creation of the plastic pink flamingo while working for Union Products."
+    },
+    {
+      "index": 120,
+      "fact": "Don Featherstone was a designer.",
+      "gold": "S",
+      "score": 0.9968974590301514,
+      "best_evidence": "After graduating from the Worcester Art Museum's art school, in 1957, he was offered a job designing three-dimensional animals for Union Products, Inc. Over his years at Union Products, Featherstone sculpted over 750 different items, the first two of which were a girl with a water can and a boy with a dog."
+    },
+    {
+      "index": 121,
+      "fact": "Don Featherstone created the plastic pink flamingo lawn ornament.",
+      "gold": "S",
+      "score": 0.2227810174226761,
+      "best_evidence": "Biography."
+    },
+    {
+      "index": 122,
+      "fact": "He has worked as a researcher at various organizations.",
+      "gold": "NS",
+      "score": 0.7468191385269165,
+      "best_evidence": "In addition, he directed the BYU Biomedical Imaging Lab, and performed research on scanning impedance imaging."
+    },
+    {
+      "index": 123,
+      "fact": "He has worked as a scientist at various organizations.",
+      "gold": "NS",
+      "score": 0.6516522765159607,
+      "best_evidence": "In addition, he directed the BYU Biomedical Imaging Lab, and performed research on scanning impedance imaging."
+    },
+    {
+      "index": 124,
+      "fact": "Mayo Clinic is an organization.",
+      "gold": "NS",
+      "score": 0.8170735239982605,
+      "best_evidence": "Oliphant has a Ph.D. in Biomedical Engineering from the Mayo Clinic and B.S. and M.S. degrees in Mathematics and Electrical Engineering from Brigham Young University."
+    },
+    {
+      "index": 125,
+      "fact": "He has worked at Mayo Clinic.",
+      "gold": "NS",
+      "score": 0.16797800362110138,
+      "best_evidence": "Oliphant has a Ph.D. in Biomedical Engineering from the Mayo Clinic and B.S. and M.S. degrees in Mathematics and Electrical Engineering from Brigham Young University."
+    },
+    {
+      "index": 126,
+      "fact": "Google is an organization.",
+      "gold": "NS",
+      "score": 0.2947830259799957,
+      "best_evidence": "Oliphant was an Assistant Professor of Electrical and Computer Engineering at Brigham Young University from 2001 to 2007."
+    },
+    {
+      "index": 127,
+      "fact": "He has worked at Google.",
+      "gold": "NS",
+      "score": 0.0033653525169938803,
+      "best_evidence": "Early life and education."
+    },
+    {
+      "index": 128,
+      "fact": "Continuum Analytics is an organization.",
+      "gold": "S",
+      "score": 0.9432196617126465,
+      "best_evidence": "In July 2015 Continuum Analytics received 24 million dollars in Series A Funding."
+    },
+    {
+      "index": 129,
+      "fact": "He has worked at Continuum Analytics.",
+      "gold": "S",
+      "score": 0.9822536110877991,
+      "best_evidence": "He is also a founder of technology startup Anaconda (\"previously Continuum Analytics\")."
+    },
+    {
+      "index": 130,
+      "fact": "Furlong joined the Canadian Armed Forces.",
+      "gold": "S",
+      "score": 0.9980375170707703,
+      "best_evidence": "Furlong enlisted in the Canadian Army and served with the 3rd Battalion, Princess Patricia's Canadian Light Infantry."
+    },
+    {
+      "index": 131,
+      "fact": "Furlong joined in 1995.",
+      "gold": "NS",
+      "score": 0.15878215432167053,
+      "best_evidence": "Further reading. -"
+    },
+    {
+      "index": 132,
+      "fact": "He served in the Princess Patricia's Canadian Light Infantry.",
+      "gold": "S",
+      "score": 0.9808803200721741,
+      "best_evidence": "Furlong enlisted in the Canadian Army and served with the 3rd Battalion, Princess Patricia's Canadian Light Infantry."
+    },
+    {
+      "index": 133,
+      "fact": "He served as a sniper.",
+      "gold": "NS",
+      "score": 0.9973781108856201,
+      "best_evidence": "Rob Furlong Rob Furlong (born 11 November 1976) is a Canadian former military sniper who, from March 2002 until November 2009, held the world record for the longest confirmed sniper kill in combat, at."
+    },
+    {
+      "index": 134,
+      "fact": "Furlong left the military.",
+      "gold": "S",
+      "score": 0.9961949586868286,
+      "best_evidence": "After leaving the Canadian Army, Furlong moved to Edmonton, Alberta and joined the Edmonton Police Service in 2004, although he had considered joining Joint Task Force 2."
+    },
+    {
+      "index": 135,
+      "fact": "Furlong worked as a hunting guide.",
+      "gold": "NS",
+      "score": 0.41968289017677307,
+      "best_evidence": "The distance was measured as."
+    },
+    {
+      "index": 136,
+      "fact": "Furlong has been involved in various veteran organizations.",
+      "gold": "NS",
+      "score": 0.17374412715435028,
+      "best_evidence": "Further reading. -"
+    },
+    {
+      "index": 137,
+      "fact": "Jessica Barboza is Venezuelan.",
+      "gold": "S",
+      "score": 0.9992745518684387,
+      "best_evidence": "Jessica Barboza Jessica Cristina Barboza Schmidt (born in Maracaibo, Venezuela on 14 August 1987) is a Venezuelan model and beauty pageant titleholder who won the titles of Miss Earth Venezuela 2009 and Miss International Venezuela 2010."
+    },
+    {
+      "index": 138,
+      "fact": "Jessica Barboza is a fashion model.",
+      "gold": "S",
+      "score": 0.7934349775314331,
+      "best_evidence": "Barboza won in 2009 the Sambil Model / Miss Earth Venezuela title in a pageant held in Margarita Island, Venezuela on June 12, 2009."
+    },
+    {
+      "index": 139,
+      "fact": "Jessica Barboza is a beauty queen.",
+      "gold": "S",
+      "score": 0.9893432855606079,
+      "best_evidence": "Jessica Barboza Jessica Cristina Barboza Schmidt (born in Maracaibo, Venezuela on 14 August 1987) is a Venezuelan model and beauty pageant titleholder who won the titles of Miss Earth Venezuela 2009 and Miss International Venezuela 2010."
+    },
+    {
+      "index": 140,
+      "fact": "Jessica Barboza is a social media personality.",
+      "gold": "NS",
+      "score": 0.02808557264506817,
+      "best_evidence": "Miss Earth."
+    },
+    {
+      "index": 141,
+      "fact": "She was born on July 18, 1987.",
+      "gold": "S",
+      "score": 0.001244599581696093,
+      "best_evidence": "During the Miss International 2011 final, Jessica Bar"
+    },
+    {
+      "index": 142,
+      "fact": "She was born in Maracaibo.",
+      "gold": "S",
+      "score": 0.9955748319625854,
+      "best_evidence": "Jessica Barboza Jessica Cristina Barboza Schmidt (born in Maracaibo, Venezuela on 14 August 1987) is a Venezuelan model and beauty pageant titleholder who won the titles of Miss Earth Venezuela 2009 and Miss International Venezuela 2010."
+    },
+    {
+      "index": 143,
+      "fact": "Maracaibo is in Venezuela.",
+      "gold": "S",
+      "score": 0.9973202347755432,
+      "best_evidence": "Jessica Barboza Jessica Cristina Barboza Schmidt (born in Maracaibo, Venezuela on 14 August 1987) is a Venezuelan model and beauty pageant titleholder who won the titles of Miss Earth Venezuela 2009 and Miss International Venezuela 2010."
+    },
+    {
+      "index": 144,
+      "fact": "With CSKA, he won domestic titles.",
+      "gold": "S",
+      "score": 0.034988030791282654,
+      "best_evidence": "ation and the minimum fee release clause."
+    },
+    {
+      "index": 145,
+      "fact": "With CSKA, he won international titles.",
+      "gold": "S",
+      "score": 0.8030687570571899,
+      "best_evidence": "This made CSKA the first Russian club to ever win a UEFA competition."
+    },
+    {
+      "index": 146,
+      "fact": "With CSKA, he won three Russian Premier League titles.",
+      "gold": "NS",
+      "score": 0.15247076749801636,
+      "best_evidence": "Internacional - Campeonato Gaúcho: 2002, 2003 - Copa Sudamericana: 2008 CSKA Moscow - Russian Premier League: 2005, 2006 - Russian Cup: 2004–05, 2005–06, 2008–09 - Russian Super Cup: 2004, 2006, 2007, 2009 - UEFA Cup: 2004–05 Palmeiras - Copa do Brasil: 2012 Botafogo - Campeonato Brasileiro Série B: 2015 Goiás - Campeonato Goiano: 2016"
+    },
+    {
+      "index": 147,
+      "fact": "With CSKA, he won the UEFA Cup.",
+      "gold": "S",
+      "score": 0.33985376358032227,
+      "best_evidence": "Internacional - Campeonato Gaúcho: 2002, 2003 - Copa Sudamericana: 2008 CSKA Moscow - Russian Premier League: 2005, 2006 - Russian Cup: 2004–05, 2005–06, 2008–09 - Russian Super Cup: 2004, 2006, 2007, 2009 - UEFA Cup: 2004–05 Palmeiras - Copa do Brasil: 2012 Botafogo - Campeonato Brasileiro Série B: 2015 Goiás - Campeonato Goiano: 2016"
+    },
+    {
+      "index": 148,
+      "fact": "He won the UEFA Cup in 2005.",
+      "gold": "S",
+      "score": 0.95733642578125,
+      "best_evidence": "Carvalho's brilliant play during the 2005 UEFA Cup was the key to success of his team, who won the competition, defeating Sporting Lisbon in the Final."
+    },
+    {
+      "index": 149,
+      "fact": "Florencia Bertotti is an Argentinian.",
+      "gold": "S",
+      "score": 0.9781656861305237,
+      "best_evidence": "Florencia Bertotti María Florencia Bertotti (born 15 March 1983), better known as Florencia Bertotti is an Argentine actress, singer, songwriter and businesswoman."
+    },
+    {
+      "index": 150,
+      "fact": "Florencia Bertotti is an actress.",
+      "gold": "S",
+      "score": 0.9992154836654663,
+      "best_evidence": "Florencia Bertotti María Florencia Bertotti (born 15 March 1983), better known as Florencia Bertotti is an Argentine actress, singer, songwriter and businesswoman."
+    },
+    {
+      "index": 151,
+      "fact": "Florencia Bertotti is a singer.",
+      "gold": "S",
+      "score": 0.9987049102783203,
+      "best_evidence": "Florencia Bertotti María Florencia Bertotti (born 15 March 1983), better known as Florencia Bertotti is an Argentine actress, singer, songwriter and businesswoman."
+    },
+    {
+      "index": 152,
+      "fact": "Florencia Bertotti is a television host.",
+      "gold": "NS",
+      "score": 0.09970705211162567,
+      "best_evidence": "Discography.:Soundtrack albums. -"
+    },
+    {
+      "index": 153,
+      "fact": "Bertotti is a talented performer.",
+      "gold": "NS",
+      "score": 0.4321756362915039,
+      "best_evidence": "Florencia Bertotti María Florencia Bertotti (born 15 March 1983), better known as Florencia Bertotti is an Argentine actress, singer, songwriter and businesswoman."
+    },
+    {
+      "index": 154,
+      "fact": "Bertotti is an accomplished performer.",
+      "gold": "NS",
+      "score": 0.19925513863563538,
+      "best_evidence": "Florencia Bertotti María Florencia Bertotti (born 15 March 1983), better known as Florencia Bertotti is an Argentine actress, singer, songwriter and businesswoman."
+    },
+    {
+      "index": 155,
+      "fact": "Bertotti has made an impact on the entertainment industry in Argentina.",
+      "gold": "NS",
+      "score": 0.22500668466091156,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 156,
+      "fact": "Bertotti has made an impact on the entertainment industry beyond Argentina.",
+      "gold": "NS",
+      "score": 0.16421009600162506,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 157,
+      "fact": "Jonathan Haagensen is a Brazilian.",
+      "gold": "S",
+      "score": 0.9975722432136536,
+      "best_evidence": "Jonathan Haagensen Jonathan Haagensen Cerqueira (born February 23, 1983) is a Brazilian actor, model, and singer."
+    },
+    {
+      "index": 158,
+      "fact": "Jonathan Haagensenis an actor.",
+      "gold": "S",
+      "score": 0.9985936284065247,
+      "best_evidence": "Jonathan Haagensen Jonathan Haagensen Cerqueira (born February 23, 1983) is a Brazilian actor, model, and singer."
+    },
+    {
+      "index": 159,
+      "fact": "Jonathan Haagensen was born on February 3, 1982.",
+      "gold": "NS",
+      "score": 0.015491697937250137,
+      "best_evidence": "iscient\""
+    },
+    {
+      "index": 160,
+      "fact": "Jonathan Haagensen was born in Rio de Janeiro.",
+      "gold": "S",
+      "score": 0.05321873351931572,
+      "best_evidence": "iscient\""
+    },
+    {
+      "index": 161,
+      "fact": "Rio de Janeiro is in Brazil.",
+      "gold": "S",
+      "score": 0.45415666699409485,
+      "best_evidence": "2000 - \"Palace II\" - Short - (Fernando Meirelles and Kátia Lund) - 2002 - \"City of God (Cidade de Deus)\" - (Fernando Meirelles and Kátia Lund) - 2002 - \"Seja o que Deus Quiser\" - (Murilo Salles) - 2004 - \"Four for None (O Diabo a Quatro)\" - (Alice de Andrade) - 2002/05 - \"City of Men (Cidade dos Homens)\" - TV series - (Fernando Meirelles, Kátia Lund, Paulo Morelli, Cao Hamburger and others) - 2006 - \"The Samba Poet (Noel - Poeta da Vila)\" - (Ricardo Van Steen) - 2007 - \"City of Men (Cidade dos Homens)\" - (Paulo Morelli) - 2008 - \"Embarque Imediato\" - (Allan Fiterman) - 2018 - \"O Mecanismo\" - (José Padilha) - 2020 - \"Omn"
+    },
+    {
+      "index": 162,
+      "fact": "Haagensen began his acting career in theater.",
+      "gold": "S",
+      "score": 0.7048906683921814,
+      "best_evidence": "He was discovered in the Vidigal's theatrical company \"Nós do Morro\"."
+    },
+    {
+      "index": 163,
+      "fact": "Haagensen began his acting career when he was 15 years old.",
+      "gold": "NS",
+      "score": 0.03080005943775177,
+      "best_evidence": "iscient\""
+    },
+    {
+      "index": 164,
+      "fact": "Haagensen later transitioned to television.",
+      "gold": "S",
+      "score": 0.0165975671261549,
+      "best_evidence": "2000 - \"Palace II\" - Short - (Fernando Meirelles and Kátia Lund) - 2002 - \"City of God (Cidade de Deus)\" - (Fernando Meirelles and Kátia Lund) - 2002 - \"Seja o que Deus Quiser\" - (Murilo Salles) - 2004 - \"Four for None (O Diabo a Quatro)\" - (Alice de Andrade) - 2002/05 - \"City of Men (Cidade dos Homens)\" - TV series - (Fernando Meirelles, Kátia Lund, Paulo Morelli, Cao Hamburger and others) - 2006 - \"The Samba Poet (Noel - Poeta da Vila)\" - (Ricardo Van Steen) - 2007 - \"City of Men (Cidade dos Homens)\" - (Paulo Morelli) - 2008 - \"Embarque Imediato\" - (Allan Fiterman) - 2018 - \"O Mecanismo\" - (José Padilha) - 2020 - \"Omn"
+    },
+    {
+      "index": 165,
+      "fact": "Haagensen later transitioned to film.",
+      "gold": "S",
+      "score": 0.06302614510059357,
+      "best_evidence": "Haagensen appeared in the film \"City of God\", by Fernando Meireles and Kátia Lund, as did his brother, Phellipe Haagensen, also an actor."
+    },
+    {
+      "index": 166,
+      "fact": "Kerser is an Australian.",
+      "gold": "S",
+      "score": 0.99660325050354,
+      "best_evidence": "Kerser Scott Froml (born 21 August 1987), better known by his stage name Kerser, is an Australian rapper."
+    },
+    {
+      "index": 167,
+      "fact": "Kerser is a rapper.",
+      "gold": "S",
+      "score": 0.9990398287773132,
+      "best_evidence": "Kerser is a well-known battle rapper in Australia, appearing on circuits such as Got Beef, Grind Time Now Australia and Real Talk Battle League."
+    },
+    {
+      "index": 168,
+      "fact": "Kerser is a songwriter.",
+      "gold": "NS",
+      "score": 0.9455630779266357,
+      "best_evidence": "Kerser's fourth album \"King\", produced by Nebs, was released on 14 November 2014."
+    },
+    {
+      "index": 169,
+      "fact": "Kerser is from Sydney.",
+      "gold": "NS",
+      "score": 0.023488441482186317,
+      "best_evidence": "See also. -"
+    },
+    {
+      "index": 170,
+      "fact": "Kerser's real name is Scott Barrow.",
+      "gold": "NS",
+      "score": 0.017411448061466217,
+      "best_evidence": "."
+    },
+    {
+      "index": 171,
+      "fact": "Botak Chin is also known as Chin Peng.",
+      "gold": "NS",
+      "score": 0.06782974302768707,
+      "best_evidence": "Crime sprees."
+    },
+    {
+      "index": 172,
+      "fact": "Botak Chin was a Malayan.",
+      "gold": "S",
+      "score": 0.9954038858413696,
+      "best_evidence": "Botak Chin Wong Swee Chin, known professionally as Edmund Tan / Louis Ling / Botak Chin (3 March 1951–11 June 1981) was a Malaysian criminal and gangster."
+    },
+    {
+      "index": 173,
+      "fact": "Botak Chin was a communist.",
+      "gold": "NS",
+      "score": 0.0029640947468578815,
+      "best_evidence": "Crime sprees."
+    },
+    {
+      "index": 174,
+      "fact": "Botak Chin was a revolutionary.",
+      "gold": "NS",
+      "score": 0.019719889387488365,
+      "best_evidence": "He was respected by the Chinese Hakka community and often regarded as modern-age Robin Hood, as some say he shared the cash from the robberies with the poor."
+    },
+    {
+      "index": 175,
+      "fact": "Botak Chin led the Communist Party of Malaya (CPM).",
+      "gold": "NS",
+      "score": 0.13954296708106995,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 176,
+      "fact": "Botak Chin led the CPM in a guerrilla war.",
+      "gold": "NS",
+      "score": 0.1352188140153885,
+      "best_evidence": "Jalan Tun Ismail (formerly known as Maxwell Road)."
+    },
+    {
+      "index": 177,
+      "fact": "Botak Chin led the CPM against the British colonial government.",
+      "gold": "NS",
+      "score": 0.12750361859798431,
+      "best_evidence": "Early life."
+    },
+    {
+      "index": 178,
+      "fact": "Botak Chin led the CPM in the 1940s and 1950s.",
+      "gold": "NS",
+      "score": 0.04031415656208992,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 179,
+      "fact": "He started surfing at a young age.",
+      "gold": "NS",
+      "score": 0.06603099405765533,
+      "best_evidence": "competitor Sally Fitzgibbons, he competed in GromSearch, a national series development program that gives under 16 year olds competition experience against top senior surfers."
+    },
+    {
+      "index": 180,
+      "fact": "He quickly developed a passion for the sport.",
+      "gold": "NS",
+      "score": 0.047280121594667435,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 181,
+      "fact": "Owen is known for his powerful surfing style.",
+      "gold": "NS",
+      "score": 0.1548159420490265,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 182,
+      "fact": "Owen is known for his dynamic surfing style.",
+      "gold": "NS",
+      "score": 0.13800987601280212,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 183,
+      "fact": "Owen is known for his ability to perform aerial maneuvers with ease.",
+      "gold": "NS",
+      "score": 0.18154571950435638,
+      "best_evidence": "Personal life."
+    },
+    {
+      "index": 184,
+      "fact": "Shahnaz married Ardeshir Zahedi.",
+      "gold": "S",
+      "score": 0.985503613948822,
+      "best_evidence": "Her first marriage, at age sixteen, was to Ardeshir Zahedi on 11 October 1957, at Golestan Palace in Tehran."
+    },
+    {
+      "index": 185,
+      "fact": "Shahnaz married in 1959.",
+      "gold": "NS",
+      "score": 0.02317674830555916,
+      "best_evidence": "Egyptian government."
+    },
+    {
+      "index": 186,
+      "fact": "Ardeshir Zahedi served as Iran's foreign minister.",
+      "gold": "S",
+      "score": 0.5410166382789612,
+      "best_evidence": "He was one-time Iranian foreign minister and twice Iranian ambassador to the United States (1957–64 and 1972–79).{{cite news|title=Iran Shah's daughter to wed engineer in simple ceremony|url=https://news.google.com/newspapers?id=ZcdGAAAAIBAJ&sjid=8vMMAAAAIBAJ&pg=1761,3998465&dq=marble+palace+tehran&hl=en|access-date=23 July 2013|newspaper=Lewiston Evening Journal Shahnaz later married Khosrow Jahanbani in February 1971 at the Iranian Embassy, Paris.{{cite web|title=Centers of Power in Iran During her father's reign, Shahnaz had investments in agricultural enterprises and assembly plants of Honda bicycles and motorcycles."
+    },
+    {
+      "index": 187,
+      "fact": "Ardeshir Zahedi served as Iran's ambassador to the United States.",
+      "gold": "S",
+      "score": 0.1605958193540573,
+      "best_evidence": "He was one-time Iranian foreign minister and twice Iranian ambassador to the United States (1957–64 and 1972–79).{{cite news|title=Iran Shah's daughter to wed engineer in simple ceremony|url=https://news.google.com/newspapers?id=ZcdGAAAAIBAJ&sjid=8vMMAAAAIBAJ&pg=1761,3998465&dq=marble+palace+tehran&hl=en|access-date=23 July 2013|newspaper=Lewiston Evening Journal Shahnaz later married Khosrow Jahanbani in February 1971 at the Iranian Embassy, Paris.{{cite web|title=Centers of Power in Iran During her father's reign, Shahnaz had investments in agricultural enterprises and assembly plants of Honda bicycles and motorcycles."
+    },
+    {
+      "index": 188,
+      "fact": "They had three children together.",
+      "gold": "NS",
+      "score": 0.00466107577085495,
+      "best_evidence": "Egyptian government."
+    },
+    {
+      "index": 189,
+      "fact": "They divorced in 1964.",
+      "gold": "S",
+      "score": 0.0030912209767848253,
+      "best_evidence": "Egyptian government."
+    },
+    {
+      "index": 190,
+      "fact": "She passed away on June 27, 2020.",
+      "gold": "NS",
+      "score": 0.005492703523486853,
+      "best_evidence": "Honours. -"
+    },
+    {
+      "index": 191,
+      "fact": "She passed away at the age of 79.",
+      "gold": "NS",
+      "score": 0.022587213665246964,
+      "best_evidence": "Shahnaz Pahlavi was born in Tehran on 27 October 1940.{{cite news|title=تابعیت مصری برای شهناز پهلوی، نخستین فرزند شاه سابق ایران|url=https://www.bbc.com/persian/iran/2013/12/131210_u08_egypt_shahnaz|access-date=7 August 2021|work=BBC|date=11 December 2013 Shahnaz Pahlavi was educated in a Belgian boarding school, the Lycée Léonie de Waha, in Liège and then in Switzerland."
+    },
+    {
+      "index": 192,
+      "fact": "Jidenna's music is a fusion of hip-hop.",
+      "gold": "NS",
+      "score": 0.47867557406425476,
+      "best_evidence": "His song \"Classic Man\" was nominated for Best Rap/Sung Collaboration at the 58th Grammy Awards."
+    },
+    {
+      "index": 193,
+      "fact": "Jidenna's music is a fusion of R&B.",
+      "gold": "NS",
+      "score": 0.15477803349494934,
+      "best_evidence": "Career."
+    },
+    {
+      "index": 194,
+      "fact": "Jidenna's music is a fusion of Afrobeat.",
+      "gold": "NS",
+      "score": 0.17844200134277344,
+      "best_evidence": "Career."
+    },
+    {
+      "index": 195,
+      "fact": "He often incorporates African elements into his style.",
+      "gold": "S",
+      "score": 0.9775035381317139,
+      "best_evidence": "Jidenna describes his look as \"heavily inspired by the Harlem Renaissance with hints of traditional West African design,\" and a \"marriage of European and African aesthetics.\""
+    },
+    {
+      "index": 196,
+      "fact": "He often incorporates African elements into his fashion.",
+      "gold": "S",
+      "score": 0.9739447832107544,
+      "best_evidence": "Jidenna describes his look as \"heavily inspired by the Harlem Renaissance with hints of traditional West African design,\" and a \"marriage of European and African aesthetics.\""
+    },
+    {
+      "index": 197,
+      "fact": "She was born on April 2, 1973.",
+      "gold": "S",
+      "score": 0.9952824711799622,
+      "best_evidence": "Roselyn Sánchez Roselyn Milagros Sánchez Rodríguez (born April 2, 1973) is a Puerto Rican singer-songwriter, dancer, model, actress, producer, and writer."
+    },
+    {
+      "index": 198,
+      "fact": "She was born in San Juan.",
+      "gold": "S",
+      "score": 0.9757344722747803,
+      "best_evidence": "Sánchez was born in San Juan, Puerto Rico, and is the youngest of four siblings, having three older brothers."
+    },
+    {
+      "index": 199,
+      "fact": "San Juan is in Puerto Rico.",
+      "gold": "S",
+      "score": 0.9972763657569885,
+      "best_evidence": "Sanchez became engaged to actor Eric Winter in December 2007 after two years of dating and they married on 29 November 2008, in San Juan, Puerto Rico."
+    },
+    {
+      "index": 200,
+      "fact": "She has supported St. Jude Children's Research Hospital.",
+      "gold": "NS",
+      "score": 0.18854005634784698,
+      "best_evidence": "Discography. -"
+    },
+    {
+      "index": 201,
+      "fact": "She has supported The National Alliance on Mental Illness.",
+      "gold": "NS",
+      "score": 0.1394309103488922,
+      "best_evidence": "Discography. -"
+    },
+    {
+      "index": 202,
+      "fact": "She has supported The National Foundation for Autism Research.",
+      "gold": "NS",
+      "score": 0.2123660296201706,
+      "best_evidence": "Discography. -"
+    },
+    {
+      "index": 203,
+      "fact": "Ji Sung is South Korean.",
+      "gold": "S",
+      "score": 0.9975800514221191,
+      "best_evidence": "Ji Sung Ji Sung (born Kwak Tae-geun on 27 February 1977) is a South Korean actor."
+    },
+    {
+      "index": 204,
+      "fact": "Ji Sung is an actor.",
+      "gold": "S",
+      "score": 0.9991876482963562,
+      "best_evidence": "Ji Sung Ji Sung (born Kwak Tae-geun on 27 February 1977) is a South Korean actor."
+    },
+    {
+      "index": 205,
+      "fact": "Ji Sung's real name is Kwak Tae Geun.",
+      "gold": "S",
+      "score": 0.3814399838447571,
+      "best_evidence": "Ji Sung Ji Sung (born Kwak Tae-geun on 27 February 1977) is a South Korean actor."
+    },
+    {
+      "index": 206,
+      "fact": "Ji Sung was born on February 27, 1977.",
+      "gold": "S",
+      "score": 0.9969600439071655,
+      "best_evidence": "Ji Sung Ji Sung (born Kwak Tae-geun on 27 February 1977) is a South Korean actor."
+    },
+    {
+      "index": 207,
+      "fact": "He has since then starred in numerous dramas.",
+      "gold": "S",
+      "score": 0.06998774409294128,
+      "best_evidence": "He is best known for his roles in the television dramas \"All In\" (2003), \"Save the Last Dance for Me\" (2004), \"New Heart\" (2007), \"Protect the Boss\" (2011), \"Secret Love\" (2013), \"Kill Me, Heal Me\" (2015), \"Innocent Defendant\" (2017), \"Familiar Wife\" (2018), \"Doctor John\" (2019), \"The Devil Judge\" (2021) and the film \"My PS Partner\" (2012)."
+    },
+    {
+      "index": 208,
+      "fact": "The dramas he has starred in have been popular.",
+      "gold": "S",
+      "score": 0.21245412528514862,
+      "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+    },
+    {
+      "index": 209,
+      "fact": "He has since then starred in numerous films.",
+      "gold": "S",
+      "score": 0.02034555934369564,
+      "best_evidence": "He is best known for his roles in the television dramas \"All In\" (2003), \"Save the Last Dance for Me\" (2004), \"New Heart\" (2007), \"Protect the Boss\" (2011), \"Secret Love\" (2013), \"Kill Me, Heal Me\" (2015), \"Innocent Defendant\" (2017), \"Familiar Wife\" (2018), \"Doctor John\" (2019), \"The Devil Judge\" (2021) and the film \"My PS Partner\" (2012)."
+    },
+    {
+      "index": 210,
+      "fact": "The films he has starred in have been popular.",
+      "gold": "S",
+      "score": 0.15356244146823883,
+      "best_evidence": "Early life."
+    },
+    {
+      "index": 211,
+      "fact": "He has since then starred in \"Save the Last Dance for Me.\".",
+      "gold": "S",
+      "score": 0.05155251547694206,
+      "best_evidence": "In \"Save the Last Dance for Me"
+    },
+    {
+      "index": 212,
+      "fact": "\"Save the Last Dance for Me.\" is popular.",
+      "gold": "S",
+      "score": 0.7847806811332703,
+      "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+    },
+    {
+      "index": 213,
+      "fact": "He has since then starred in \"New Heart.\".",
+      "gold": "S",
+      "score": 0.625313401222229,
+      "best_evidence": "He made his comeback in the medical drama \"New Heart\" (2007–08), playing a cardiothoracic surgery resident."
+    },
+    {
+      "index": 214,
+      "fact": "\"New Heart.\" is popular.",
+      "gold": "S",
+      "score": 0.5326966643333435,
+      "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+    },
+    {
+      "index": 215,
+      "fact": "He has since then starred in \"Protect the Boss.\".",
+      "gold": "S",
+      "score": 0.9350829720497131,
+      "best_evidence": "Later that year, he was cast in the workplace romantic comedy \"Protect the Boss\"."
+    },
+    {
+      "index": 216,
+      "fact": "-\"Protect the Boss.\" is popular.",
+      "gold": "S",
+      "score": 0.4483925700187683,
+      "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+    },
+    {
+      "index": 217,
+      "fact": "He has since then starred in \"Kill Me, Heal Me.\".",
+      "gold": "S",
+      "score": 0.8705832958221436,
+      "best_evidence": "In 2015, he reunited with \"Secret Love\" co-star Hwang Jung-eum in \"Kill Me, Heal Me\", in which he played a chaebol millionaire with dissociative identity disorder formerly known as Multiple Personality Disorder from DSMIV-TR who has seven different identities."
+    },
+    {
+      "index": 218,
+      "fact": "\"Kill Me, Heal Me.\" is popular.",
+      "gold": "S",
+      "score": 0.6293408870697021,
+      "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+    },
+    {
+      "index": 219,
+      "fact": "He has since then starred in \"Familiar Wife.\".",
+      "gold": "S",
+      "score": 0.8021826148033142,
+      "best_evidence": "He is best known for his roles in the television dramas \"All In\" (2003), \"Save the Last Dance for Me\" (2004), \"New Heart\" (2007), \"Protect the Boss\" (2011), \"Secret Love\" (2013), \"Kill Me, Heal Me\" (2015), \"Innocent Defendant\" (2017), \"Familiar Wife\" (2018), \"Doctor John\" (2019), \"The Devil Judge\" (2021) and the film \"My PS Partner\" (2012)."
+    },
+    {
+      "index": 220,
+      "fact": "\"Familiar Wife.\" is popular.",
+      "gold": "S",
+      "score": 0.15153753757476807,
+      "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+    }
+  ],
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.5.0+cpu",
+    "transformers": "4.45.2",
+    "device": "cpu",
+    "checkpoint_commit": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb"
+  }
+}
