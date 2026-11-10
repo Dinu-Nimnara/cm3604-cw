@@ -1,0 +1,44 @@
+{
+  "evaluation": "Development data used for threshold selection; not independent test data.",
+  "correct": 188,
+  "total": 221,
+  "accuracy": 0.8506787330316742,
+  "threshold": 0.436032310128212,
+  "confusion_matrix_order": "rows actual S,NS; columns predicted S,NS",
+  "confusion_matrix": [
+    [
+      95,
+      17
+    ],
+    [
+      16,
+      93
+    ]
+  ],
+  "normal_driver_log_accuracy_verified": true,
+  "model_inference_performed": false,
+  "figures": [
+    "m3_confusion_matrix.png",
+    "m3_accuracy_comparison.png",
+    "m3_threshold_accuracy.png",
+    "m3_score_distributions.png"
+  ],
+  "inputs": [
+    {
+      "filename": "baseline_scores.json",
+      "sha256": "e0caed820f3dd02a03d745aab6616cb7d2811f7f4073b281d0b6f81bb0a7aefb"
+    },
+    {
+      "filename": "evidence_context_scores.json",
+      "sha256": "f0a9d95d289a8af952b06609a8c734181f68d8979c95e5d0dd94abec2da038ae"
+    },
+    {
+      "filename": "evidence_context_report.json",
+      "sha256": "7d6d5d627da482d49e1bf2fd3a6c2d081141036e24053612fe01008edcf15308"
+    },
+    {
+      "filename": "context_driver_console.txt",
+      "sha256": "e4487eb963a2c6b0ce0719bb2fdf84082f4591af0225c43df82215d696607190"
+    }
+  ]
+}
