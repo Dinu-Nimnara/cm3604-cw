@@ -1,0 +1,266 @@
+[
+  {
+    "index": 2,
+    "fact": "Marianne McAndrew is a singer.",
+    "gold": "NS",
+    "score": 0.9544445872306824,
+    "best_evidence": "McAndrew, along with everything else related to the film \"Hello, Dolly!\" experienced something of a resurgence in popularity with the release of \"WALL-E\", which featured clips from the film, including a duet with McAndrew's character (but McAndrew did not do her own singing in the film, which some news outlets claimed in articles about \"WALL-E\").",
+    "prediction": "S"
+  },
+  {
+    "index": 5,
+    "fact": "Cleveland is in Ohio.",
+    "gold": "NS",
+    "score": 0.9936135411262512,
+    "best_evidence": "Trivisonno was born in East Cleveland, Ohio, and attended Mayfield High School in",
+    "prediction": "S"
+  },
+  {
+    "index": 8,
+    "fact": "Gerhard Fischer is best known for inventing a metal detector.",
+    "gold": "S",
+    "score": 0.010851419530808926,
+    "best_evidence": "Fisher shared the idea with Albert Einstein who correctly predicted the proliferation of hand held metal detector use. In 1937, he patented his metal detector.",
+    "prediction": "NS"
+  },
+  {
+    "index": 9,
+    "fact": "Gerhard Fischer invented the first handheld, battery-operated metal detector.",
+    "gold": "S",
+    "score": 0.26700136065483093,
+    "best_evidence": "Biography.",
+    "prediction": "NS"
+  },
+  {
+    "index": 19,
+    "fact": "She transitioned to acting.",
+    "gold": "NS",
+    "score": 0.812103271484375,
+    "best_evidence": "Virginia Valli Virginia Valli (died September 24, 1968) was an American stage and film actress whose motion picture career started in the silent film era and lasted until the beginning of the sound film era of the 1930s.",
+    "prediction": "S"
+  },
+  {
+    "index": 34,
+    "fact": "Tusa has been involved in various cultural initiatives.",
+    "gold": "NS",
+    "score": 0.7056112885475159,
+    "best_evidence": "L'urbanistica di Solunto, 1970 - Anastylosis ad Agrigento Tempio di Eracle e Selinunte Tempio C, 1975 - La scultura in pietra di Selinunte, 1984 - La preistoria in Sicilia, 1987 - Selinunte nella mia vita, 1990 - Segesta, 1991 - Siciliani illustri: Antonino Salinas, 1995 - Sarcofagi romani in Sicilia, 1995 - Il parco archeologico di Selinunte, 2011",
+    "prediction": "S"
+  },
+  {
+    "index": 40,
+    "fact": "Jean Daullé was a printmaker.",
+    "gold": "NS",
+    "score": 0.9807167649269104,
+    "best_evidence": "He engraved several portraits and plates of historical and other subjects, which are chiefly executed with the graver in a clear and firm style, which entitles him to rank with the ablest artists of his time. He marked his works J. D. The following are his principal plates:",
+    "prediction": "S"
+  },
+  {
+    "index": 41,
+    "fact": "Jean Daullé was known for his portraits.",
+    "gold": "S",
+    "score": 0.1472034901380539,
+    "best_evidence": "Work. He engraved several portraits and plates of historical and other subjects, which are chiefly executed with the graver in a clear and firm style, which entitles him to rank with the ablest artists of his time.",
+    "prediction": "NS"
+  },
+  {
+    "index": 51,
+    "fact": "Itakura has represented Japan at the Under-19-level.",
+    "gold": "NS",
+    "score": 0.5125243067741394,
+    "best_evidence": "In May 2017, Itakura was called up to the Japan U-20 national team for the 2017 U-20 World Cup. At this tournament, he played 2 matches as defensive midfielder.",
+    "prediction": "S"
+  },
+  {
+    "index": 65,
+    "fact": "Trivisonno worked at WMMS.",
+    "gold": "NS",
+    "score": 0.9649567008018494,
+    "best_evidence": "He was a frequent caller on the \"Sportsline\" radio show on WTAM AM 1100 (during this period the station was operating under the WWWE call letters). The show was hosted by the acerbic Pete Franklin and dealt with Cleveland sports.",
+    "prediction": "S"
+  },
+  {
+    "index": 67,
+    "fact": "Trivisonno worked at WKNR.",
+    "gold": "NS",
+    "score": 0.9929304122924805,
+    "best_evidence": "in the ratings, even though it was usually up against Cleveland Indians games on WKNR. It did so well, the decision was made to put Trivisonno in afternoon drive-time (under the \"Sportsline\" banner until 1998; under his own name since) ultimately leaving \"Sportsline\" to other hosts.",
+    "prediction": "S"
+  },
+  {
+    "index": 77,
+    "fact": "The Taker trilogy is a novel by Katsu.",
+    "gold": "S",
+    "score": 0.11307874321937561,
+    "best_evidence": "Personal life.",
+    "prediction": "NS"
+  },
+  {
+    "index": 78,
+    "fact": "The Hunger is a novel by Katsu.",
+    "gold": "S",
+    "score": 0.07391633093357086,
+    "best_evidence": "Personal life.",
+    "prediction": "NS"
+  },
+  {
+    "index": 79,
+    "fact": "The Deep is a novel by Katsu.",
+    "gold": "S",
+    "score": 0.07391619682312012,
+    "best_evidence": "Personal life.",
+    "prediction": "NS"
+  },
+  {
+    "index": 80,
+    "fact": "Red Widow is a novel by Katsu.",
+    "gold": "S",
+    "score": 0.09225119650363922,
+    "best_evidence": "Personal life.",
+    "prediction": "NS"
+  },
+  {
+    "index": 99,
+    "fact": "He served for many years as a pastor.",
+    "gold": "S",
+    "score": 0.31192639470100403,
+    "best_evidence": "References.",
+    "prediction": "NS"
+  },
+  {
+    "index": 105,
+    "fact": "She has worked with a number of organizations.",
+    "gold": "NS",
+    "score": 0.9243385195732117,
+    "best_evidence": "She also delivers awareness raising sessions to doctors and the Police to assist in their understanding of FGM. Her testimonies have appeared in numerous publications, including the BBC, the \"Guardian\" and the \"Telegraph\".",
+    "prediction": "S"
+  },
+  {
+    "index": 109,
+    "fact": "Nisar Ahmad Kakru was Kashmiri.",
+    "gold": "NS",
+    "score": 0.9909051656723022,
+    "best_evidence": "Nisar Ahmad Kakru Nisar Ahmad Kakru (born 26 October 1949 Baramulla, Kashmir, India) was the Chief Justice of the High Court of Andhra Pradesh, India from 19 February 2010 to 26 October 2011.",
+    "prediction": "S"
+  },
+  {
+    "index": 122,
+    "fact": "He has worked as a researcher at various organizations.",
+    "gold": "NS",
+    "score": 0.9384076595306396,
+    "best_evidence": "In addition, he directed the BYU Biomedical Imaging Lab, and performed research on scanning impedance imaging. Oliphant served as President of Enthought from 2007 until 2011.",
+    "prediction": "S"
+  },
+  {
+    "index": 123,
+    "fact": "He has worked as a scientist at various organizations.",
+    "gold": "NS",
+    "score": 0.8448871970176697,
+    "best_evidence": "In addition, he directed the BYU Biomedical Imaging Lab, and performed research on scanning impedance imaging. Oliphant served as President of Enthought from 2007 until 2011.",
+    "prediction": "S"
+  },
+  {
+    "index": 124,
+    "fact": "Mayo Clinic is an organization.",
+    "gold": "NS",
+    "score": 0.841746985912323,
+    "best_evidence": "Early life and education. Oliphant has a Ph.D. in Biomedical Engineering from the Mayo Clinic and B.S. and M.S. degrees in Mathematics and Electrical Engineering from Brigham Young University.",
+    "prediction": "S"
+  },
+  {
+    "index": 133,
+    "fact": "He served as a sniper.",
+    "gold": "NS",
+    "score": 0.9987982511520386,
+    "best_evidence": "Rob Furlong Rob Furlong (born 11 November 1976) is a Canadian former military sniper who, from March 2002 until November 2009, held the world record for the longest confirmed sniper kill in combat, at. His record stood for over 7 years and was improved upon by Craig Harrison with a distance of using a L115A3 Long Range Rifle.",
+    "prediction": "S"
+  },
+  {
+    "index": 141,
+    "fact": "She was born on July 18, 1987.",
+    "gold": "S",
+    "score": 0.001244599581696093,
+    "best_evidence": "During the Miss International 2011 final, Jessica Bar",
+    "prediction": "NS"
+  },
+  {
+    "index": 144,
+    "fact": "With CSKA, he won domestic titles.",
+    "gold": "S",
+    "score": 0.034988030791282654,
+    "best_evidence": "ation and the minimum fee release clause.",
+    "prediction": "NS"
+  },
+  {
+    "index": 160,
+    "fact": "Jonathan Haagensen was born in Rio de Janeiro.",
+    "gold": "S",
+    "score": 0.05321873351931572,
+    "best_evidence": "iscient\"",
+    "prediction": "NS"
+  },
+  {
+    "index": 164,
+    "fact": "Haagensen later transitioned to television.",
+    "gold": "S",
+    "score": 0.0165975671261549,
+    "best_evidence": "2000 - \"Palace II\" - Short - (Fernando Meirelles and Kátia Lund) - 2002 - \"City of God (Cidade de Deus)\" - (Fernando Meirelles and Kátia Lund) - 2002 - \"Seja o que Deus Quiser\" - (Murilo Salles) - 2004 - \"Four for None (O Diabo a Quatro)\" - (Alice de Andrade) - 2002/05 - \"City of Men (Cidade dos Homens)\" - TV series - (Fernando Meirelles, Kátia Lund, Paulo Morelli, Cao Hamburger and others) - 2006 - \"The Samba Poet (Noel - Poeta da Vila)\" - (Ricardo Van Steen) - 2007 - \"City of Men (Cidade dos Homens)\" - (Paulo Morelli) - 2008 - \"Embarque Imediato\" - (Allan Fiterman) - 2018 - \"O Mecanismo\" - (José Padilha) - 2020 - \"Omn",
+    "prediction": "NS"
+  },
+  {
+    "index": 168,
+    "fact": "Kerser is a songwriter.",
+    "gold": "NS",
+    "score": 0.9878496527671814,
+    "best_evidence": "Kerser's fourth album \"King\", produced by Nebs, was released on 14 November 2014. His fifth album titled \"Next Step\" was released on 13 November 2015 and produced by Sinima Beats.",
+    "prediction": "S"
+  },
+  {
+    "index": 189,
+    "fact": "They divorced in 1964.",
+    "gold": "S",
+    "score": 0.0030912209767848253,
+    "best_evidence": "Egyptian government.",
+    "prediction": "NS"
+  },
+  {
+    "index": 192,
+    "fact": "Jidenna's music is a fusion of hip-hop.",
+    "gold": "NS",
+    "score": 0.8573283553123474,
+    "best_evidence": "His song \"Classic Man\" was nominated for Best Rap/Sung Collaboration at the 58th Grammy Awards. In June of the same year, Jidenna performed the song with Monáe at the BET Awards.",
+    "prediction": "S"
+  },
+  {
+    "index": 207,
+    "fact": "He has since then starred in numerous dramas.",
+    "gold": "S",
+    "score": 0.06998774409294128,
+    "best_evidence": "He is best known for his roles in the television dramas \"All In\" (2003), \"Save the Last Dance for Me\" (2004), \"New Heart\" (2007), \"Protect the Boss\" (2011), \"Secret Love\" (2013), \"Kill Me, Heal Me\" (2015), \"Innocent Defendant\" (2017), \"Familiar Wife\" (2018), \"Doctor John\" (2019), \"The Devil Judge\" (2021) and the film \"My PS Partner\" (2012).",
+    "prediction": "NS"
+  },
+  {
+    "index": 209,
+    "fact": "He has since then starred in numerous films.",
+    "gold": "S",
+    "score": 0.02034555934369564,
+    "best_evidence": "He is best known for his roles in the television dramas \"All In\" (2003), \"Save the Last Dance for Me\" (2004), \"New Heart\" (2007), \"Protect the Boss\" (2011), \"Secret Love\" (2013), \"Kill Me, Heal Me\" (2015), \"Innocent Defendant\" (2017), \"Familiar Wife\" (2018), \"Doctor John\" (2019), \"The Devil Judge\" (2021) and the film \"My PS Partner\" (2012).",
+    "prediction": "NS"
+  },
+  {
+    "index": 211,
+    "fact": "He has since then starred in \"Save the Last Dance for Me.\".",
+    "gold": "S",
+    "score": 0.33657798171043396,
+    "best_evidence": "Wanting to challenge himself, he next appeared in his first period drama \"The King's Woman\", playing Gwanghaegun of Joseon. In \"Save the Last Dance for Me",
+    "prediction": "NS"
+  },
+  {
+    "index": 220,
+    "fact": "\"Familiar Wife.\" is popular.",
+    "gold": "S",
+    "score": 0.15153753757476807,
+    "best_evidence": "The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards.",
+    "prediction": "NS"
+  }
+]

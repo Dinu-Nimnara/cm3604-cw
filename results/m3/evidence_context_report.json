@@ -1,0 +1,197 @@
+{
+  "evaluation": "Development set used for threshold selection; no independent test set.",
+  "baseline": {
+    "threshold": 0.5,
+    "correct": 185,
+    "total": 221,
+    "accuracy": 0.8371040723981901,
+    "confusion_matrix": [
+      [
+        92,
+        20
+      ],
+      [
+        16,
+        93
+      ]
+    ],
+    "supported_precision": 0.8518518518518519,
+    "supported_recall": 0.8214285714285714,
+    "supported_f1": 0.8363636363636364
+  },
+  "selected": {
+    "threshold": 0.436032310128212,
+    "correct": 188,
+    "total": 221,
+    "accuracy": 0.8506787330316742,
+    "confusion_matrix": [
+      [
+        95,
+        17
+      ],
+      [
+        16,
+        93
+      ]
+    ],
+    "supported_precision": 0.8558558558558559,
+    "supported_recall": 0.8482142857142857,
+    "supported_f1": 0.852017937219731
+  },
+  "target": 0.83,
+  "target_met": true,
+  "cache": "results\\m3\\evidence_context_scores.json",
+  "schema_version": 1,
+  "model_id": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "inference_fingerprint": "2383f90d44fdd43be4df2aba102e7aa30c96dcf1a05d54fa4f9426804c5a0189",
+  "dataset_fingerprint": "517a57e1eaa66d5e5de7d1370f052ae37419625cddfd3c7f6574973725d86e76",
+  "total": 221,
+  "experiment": {
+    "mode": "context",
+    "runner_sha256": "d20049b3c002ecb4bf54c3e1dee011901bbfb614296e1e2043b84bf9002f6ccd",
+    "context_requires_coursework_review": true,
+    "original_implementation": {
+      "threshold": 0.3308477997779846,
+      "correct": 184,
+      "total": 221,
+      "accuracy": 0.832579185520362,
+      "confusion_matrix": [
+        [
+          90,
+          22
+        ],
+        [
+          15,
+          94
+        ]
+      ],
+      "supported_precision": 0.8571428571428571,
+      "supported_recall": 0.8035714285714286,
+      "supported_f1": 0.8294930875576038
+    },
+    "candidate_at_original_threshold": {
+      "threshold": 0.3308477997779846,
+      "correct": 187,
+      "total": 221,
+      "accuracy": 0.8461538461538461,
+      "confusion_matrix": [
+        [
+          96,
+          16
+        ],
+        [
+          18,
+          91
+        ]
+      ],
+      "supported_precision": 0.8421052631578947,
+      "supported_recall": 0.8571428571428571,
+      "supported_f1": 0.8495575221238938
+    },
+    "net_correct_change_after_retuning": 4,
+    "changed_predictions_after_retuning": [
+      {
+        "index": 51,
+        "fact": "Itakura has represented Japan at the Under-19-level.",
+        "gold": "NS",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.3218396008014679,
+        "after_score": 0.5125243067741394,
+        "best_evidence_after": "In May 2017, Itakura was called up to the Japan U-20 national team for the 2017 U-20 World Cup. At this tournament, he played 2 matches as defensive midfielder."
+      },
+      {
+        "index": 65,
+        "fact": "Trivisonno worked at WMMS.",
+        "gold": "NS",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.21295851469039917,
+        "after_score": 0.9649567008018494,
+        "best_evidence_after": "He was a frequent caller on the \"Sportsline\" radio show on WTAM AM 1100 (during this period the station was operating under the WWWE call letters). The show was hosted by the acerbic Pete Franklin and dealt with Cleveland sports."
+      },
+      {
+        "index": 67,
+        "fact": "Trivisonno worked at WKNR.",
+        "gold": "NS",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.0390140637755394,
+        "after_score": 0.9929304122924805,
+        "best_evidence_after": "in the ratings, even though it was usually up against Cleveland Indians games on WKNR. It did so well, the decision was made to put Trivisonno in afternoon drive-time (under the \"Sportsline\" banner until 1998; under his own name since) ultimately leaving \"Sportsline\" to other hosts."
+      },
+      {
+        "index": 121,
+        "fact": "Don Featherstone created the plastic pink flamingo lawn ornament.",
+        "gold": "S",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.2227810174226761,
+        "after_score": 0.7845448851585388,
+        "best_evidence_after": "Don Featherstone (artist) Donald Featherstone (January 25, 1936 – June 22, 2015) was an American artist most widely known for his 1957 creation of the plastic pink flamingo while working for Union Products. Featherstone resided in Fitchburg, Massachusetts, where he kept 57 plastic flamingos on his back lawn."
+      },
+      {
+        "index": 135,
+        "fact": "Furlong worked as a hunting guide.",
+        "gold": "NS",
+        "before": "S",
+        "after": "NS",
+        "before_score": 0.41968289017677307,
+        "after_score": 0.41968289017677307,
+        "best_evidence_after": "The distance was measured as."
+      },
+      {
+        "index": 153,
+        "fact": "Bertotti is a talented performer.",
+        "gold": "NS",
+        "before": "S",
+        "after": "NS",
+        "before_score": 0.4321756362915039,
+        "after_score": 0.4321756362915039,
+        "best_evidence_after": "Florencia Bertotti María Florencia Bertotti (born 15 March 1983), better known as Florencia Bertotti is an Argentine actress, singer, songwriter and businesswoman."
+      },
+      {
+        "index": 165,
+        "fact": "Haagensen later transitioned to film.",
+        "gold": "S",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.06302614510059357,
+        "after_score": 0.43988898396492004,
+        "best_evidence_after": "Haagensen appeared in the film \"City of God\", by Fernando Meireles and Kátia Lund, as did his brother, Phellipe Haagensen, also an actor. He was discovered in the Vidigal's theatrical company \"Nós do Morro\"."
+      },
+      {
+        "index": 187,
+        "fact": "Ardeshir Zahedi served as Iran's ambassador to the United States.",
+        "gold": "S",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.1605958193540573,
+        "after_score": 0.6487215161323547,
+        "best_evidence_after": "Her first marriage, at age sixteen, was to Ardeshir Zahedi on 11 October 1957, at Golestan Palace in Tehran. He was one-time Iranian foreign minister and twice Iranian ambassador to the United States (1957–64 and 1972–79).{{cite news|title=Iran Shah's daughter to wed engineer in simple ceremony|url=https://news.google.com/newspapers?id=ZcdGAAAAIBAJ&sjid=8vMMAAAAIBAJ&pg=1761,3998465&dq=marble+palace+tehran&hl=en|access-date=23 July 2013|newspaper=Lewiston Evening Journal Shahnaz later married Khosrow Jahanbani in February 1971 at the Iranian Embassy, Paris.{{cite web|title=Centers of Power in Iran During her father's reign, Shahnaz had investments in agricultural enterprises and assembly plants of Honda bicycles and motorcycles."
+      },
+      {
+        "index": 208,
+        "fact": "The dramas he has starred in have been popular.",
+        "gold": "S",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.21245412528514862,
+        "after_score": 0.8621155023574829,
+        "best_evidence_after": "In 2015, he reunited with \"Secret Love\" co-star Hwang Jung-eum in \"Kill Me, Heal Me\", in which he played a chaebol millionaire with dissociative identity disorder formerly known as Multiple Personality Disorder from DSMIV-TR who has seven different identities. The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+      },
+      {
+        "index": 210,
+        "fact": "The films he has starred in have been popular.",
+        "gold": "S",
+        "before": "NS",
+        "after": "S",
+        "before_score": 0.15356244146823883,
+        "after_score": 0.7343025803565979,
+        "best_evidence_after": "In 2015, he reunited with \"Secret Love\" co-star Hwang Jung-eum in \"Kill Me, Heal Me\", in which he played a chaebol millionaire with dissociative identity disorder formerly known as Multiple Personality Disorder from DSMIV-TR who has seven different identities. The series was a hit and developed a cult following, winning Ji Sung the \"Daesang (Grand Prize)\" at the MBC Drama Awards."
+      }
+    ],
+    "source_files_modified": false,
+    "limitation": "Development labels used for tuning; not held-out accuracy."
+  }
+}
